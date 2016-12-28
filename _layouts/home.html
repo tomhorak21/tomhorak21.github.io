@@ -1,0 +1,90 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
+
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+            <div>
+                {{content}}
+            </div>
+
+            <div>
+                <h2>Latest publications</h2>
+                <ul class="pub-list">
+                    {% assign sorted = (site.publications | sort: 'date') | reverse %}
+                    {% for pub in sorted %}
+                        {% if forloop.index > 3 %}
+                            {% break %}
+                        {% endif %}
+                        <li>
+                            <img class="thumbnail" src="./publications/{{ pub.date | date: "%Y" }}/{{pub.thumb}}" alt="{{pub.name}} thumbnail" />
+                            <div class="pubdata">
+                                <a href="{{pub.url}}">{{ pub.title }}</a>
+                                {% for a in pub.authors %}
+                                    {% if forloop.last %}
+                                        {% if a == "Tom Horak" %}
+                                            <strong>{{a}}</strong>.
+                                        {% else if %}
+                                            {{a}}.
+                                        {% endif %}
+                                    {% else %}
+                                        {% if a == "Tom Horak" %}
+                                            <strong>{{a}}</strong>,
+                                        {% else if %}
+                                            {{a}},
+                                        {% endif %}
+                                    {% endif %} 
+                                {% endfor %}
+                                {% if pub.toappear %}
+                                    To appear in:
+                                {% else %}
+                                    In:
+                                {% endif %}
+                                <em>{{pub.venue}}</em>.
+                                {% if page.publisher %}
+                                    {{page.publisher}},
+                                {% endif %}
+                                {% if pub.pages %}
+                                    {{pub.pages}},
+                                {% endif %}
+                                {{ pub.date | date: "%Y" }}.
+                                {% if pub.award %}
+                                    <br />
+                                    Award: <strong><em>{{pub.award}}</em></strong>
+                                {% endif %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                See <a href="/publications">all {{site.publications.size }} publications</a>.
+            </div>
+
+            <div>
+                <h2>Latest posts</h2>
+                <ul class="post-list">
+                  {% for post in site.posts %}
+                    <li>
+                      <span class="post-date">[{{ post.date | date: "%b %d, %Y" }}]</span>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                      {{ post.excerpt }}
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div><!--//main-body-->
+    </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
+

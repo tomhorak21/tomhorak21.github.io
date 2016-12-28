@@ -1,0 +1,29 @@
+
+title: Tom Horak
+url: 'https://tom-horak.de'
+baseurl: '' #change it according to your repository name
+
+#Profile information
+name: Tom Horak
+tagline: PhD Student
+affiliation: Interactive Media Lab Dresden
+pic: tom-horak.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+#sidebar links
+email: info@tom-horak.de
+twitter: '@tomhorak21'
+website: imld.de/~horak
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publications
+
+future: true

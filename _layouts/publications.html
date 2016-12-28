@@ -1,0 +1,79 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
+
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+           
+            <h1 class="pub-title">{{page.title}}</h1>
+            <div>
+                {% for a in page.authors %}
+                    {% if forloop.last %}
+                        {% if a == "Tom Horak" %}
+                            <strong>{{a}}</strong>.
+                        {% else if %}
+                            {{a}}.
+                        {% endif %}
+                    {% else %}
+                        {% if a == "Tom Horak" %}
+                            <strong>{{a}}</strong>,
+                        {% else if %}
+                            {{a}},
+                        {% endif %}
+                    {% endif %} 
+                {% endfor %}
+                <br />
+                {% if page.toappear %}
+                    To appear in:
+                {% else %}
+                    In:
+                {% endif %}
+                <em>{{page.venue}}</em>.
+                {% if page.publisher %}
+                    {{page.publisher}},
+                {% endif %}
+                {% if page.pages %}
+                    {{page.pages}},
+                {% endif %}
+                {{ page.date | date: "%Y" }}.
+                {% if page.award %}
+                    <br />
+                    <strong><em>{{page.award}} Award</em></strong>
+                {% endif %}
+                {% if page.pdf %}
+                    <br />
+                    <a href="{{page.pdf}}">Download PDF</a>.
+                {% endif %}
+            </div>
+
+            {% if page.teaser %}
+                <div class="teaser-container">
+                    <img class="teaser" src="./{{page.teaser}}" alt="{{page.name}} teaser" />
+                </div>
+            {% endif %}
+            <div class="abstract">
+                <h2>Abstract</h2>
+                <p>{{page.abstract}}</p>
+            </div>
+
+            <div>
+                {{content}}
+            </div>
+            
+        </div><!--//main-body-->
+    </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
+

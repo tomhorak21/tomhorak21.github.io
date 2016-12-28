@@ -1,0 +1,73 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
+
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+            <div>
+                {{content}}
+            </div>
+
+            <div>
+                <p> I have <em>{{site.publications.size }} publications</em> since 2014.
+                <ul class="pub-list">
+                    {% assign sorted = (site.publications | sort: 'date') | reverse %}
+                    {% for pub in sorted %}
+                        <li>
+                            <img class="thumbnail" src="./{{ pub.date | date: "%Y" }}/{{pub.thumb}}" alt="{{pub.name}} thumbnail" />
+                            <div class="pubdata">
+                                <a href="{{pub.url}}">{{ pub.title }}</a>
+                                {% for a in pub.authors %}
+                                    {% if forloop.last %}
+                                        {% if a == "Tom Horak" %}
+                                            <strong>{{a}}</strong>.
+                                        {% else if %}
+                                            {{a}}.
+                                        {% endif %}
+                                    {% else %}
+                                        {% if a == "Tom Horak" %}
+                                            <strong>{{a}}</strong>,
+                                        {% else if %}
+                                            {{a}},
+                                        {% endif %}
+                                    {% endif %} 
+                                {% endfor %}
+                                {% if pub.toappear %}
+                                    To appear in:
+                                {% else %}
+                                    In:
+                                {% endif %}
+                                <em class="venue">{{pub.venue}}</em>.
+                                {% if page.publisher %}
+                                    <span class="venue">{{page.publisher}}</span>,
+                                {% endif %}
+                                {% if pub.pages %}
+                                    <span class="pages">{{pub.pages}}</span>,
+                                {% endif %}
+                                    <span class="year">{{ pub.date | date: "%Y" }}</span>.
+                                {% if pub.award %}
+                                    <br />
+                                    <strong><em>{{pub.award}} Award</em></strong>
+                                {% endif %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div><!--//main-body-->
+    </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
+

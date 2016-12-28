@@ -1,0 +1,44 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include head.html %}
+
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        
+        <div class="main-wrapper">
+           
+            <h1 class="post-title">{{page.title}}</h1>
+            <div class="meta-date">{{page.date | date: "%b %d, %Y"}}</div>
+
+            <div>
+                {{content}}
+            </div>
+
+            <div>
+                <h2>Latest posts</h2>
+                <ul class="post-list">
+                  {% for post in site.posts %}
+                    <li>
+                      <span class="post-date">[{{ post.date | date: "%b %d, %Y" }}]</span>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                      {{ post.excerpt }}
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+            
+        </div><!--//main-body-->
+    </div>
+ 
+{% include footer.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
+
