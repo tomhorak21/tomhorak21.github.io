@@ -2,15 +2,15 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 {% include head.html %}
 
 <body>
     <div class="wrapper">
         {% include sidebar.html %}
-        
+
         <div class="main-wrapper">
             <div>
                 {{content}}
@@ -41,7 +41,7 @@ layout: compress
                                         {% else if %}
                                             {{a}},
                                         {% endif %}
-                                    {% endif %} 
+                                    {% endif %}
                                 {% endfor %}
                                 {% if pub.toappear %}
                                     To appear in:
@@ -70,20 +70,25 @@ layout: compress
             <div>
                 <h2>Latest posts</h2>
                 <ul class="post-list">
-                  {% for post in site.posts %}
-                    <li>
-                      <span class="post-date">[{{ post.date | date: "%b %d, %Y" }}]</span>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                      {{ post.excerpt }}
-                    </li>
-                  {% endfor %}
+                    {% assign sorted = (site.posts | sort: 'date') | reverse %}
+                    {% for post in sorted %}
+                        {% if forloop.index > 5 %}
+                            {% break %}
+                        {% endif %}
+                        <li>
+                          <span class="post-date">[{{ post.date | date: "%b %d, %Y" }}]</span>
+                          <a href="{{ post.url }}">{{ post.title }}</a>
+                          {{ post.excerpt }}
+                        </li>
+                     {% endfor %}
                 </ul>
+                More information <a href="/about">about me as well as all {{site.posts.size }} posts</a>.
             </div>
         </div><!--//main-body-->
     </div>
- 
+
 {% include footer.html %}
- 
+
 {% include scripts.html %}
 </body>
 </html> 
