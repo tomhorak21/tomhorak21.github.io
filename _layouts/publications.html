@@ -48,9 +48,26 @@ layout: compress
                     <br />
                     <strong><em>{{page.award}} Award</em></strong>
                 {% endif %}
+            </div>
+            <div class="links-container">
                 {% if page.pdf %}
-                    <br />
-                    <a href="{{page.pdf}}">Download PDF</a>.
+                    <a href="{{page.pdf}}"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                {% endif %}
+                {% if page.projectpage %}
+                    <a href="{{page.projectpage}}"><i class="fa fa-external-link"></i> Project page</a>
+                {% endif %}
+                {% if page.doi %}
+                    <a href="http://www.doi2bib.org/#/doi/{{page.doi}}"><i class="fa fa-quote-right"></i> Bibtex</a>
+                    <a href="http://dx.doi.org/{{page.doi}}"><i class="fa fa-book"></i> DOI</a>
+                {% endif %}
+                {% if page.poster %}
+                    <a href="{{page.poster}}"><i class="fa fa-file-image-o"></i> Poster</a>
+                {% endif %}
+                {% if page.slides %}
+                    <a href="{{page.slides}}"><i class="fa fa-picture-o"></i> Slides</a>
+                {% endif %}
+                {% if page.video %}
+                    <a href="{{page.video}}"><i class="fa fa-video-camera"></i> Video</a>
                 {% endif %}
             </div>
 

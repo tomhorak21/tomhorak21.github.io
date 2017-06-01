@@ -80,6 +80,16 @@ nav ul li {
   padding: 0 10px;
   margin-bottom: 0 !important;
 }
+.links-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.links-container a {
+  margin-left: 15px;
+}
+.links-container a:first-child {
+  margin-left: 0;
+}
 .teaser-container {
   margin-top: 20px;
   margin-bottom: 10px;
