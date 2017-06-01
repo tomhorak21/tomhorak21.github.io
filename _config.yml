@@ -1,4 +1,3 @@
-
 title: Tom Horak
 url: 'https://tom-horak.de'
 baseurl: '' #change it according to your repository name
@@ -17,7 +16,7 @@ website: imld.de/~horak
 collections:
   publications:
     output: true
-    permalink: /publications/:path
+    permalink: /publications/:path/
 
 defaults:
   - scope:
