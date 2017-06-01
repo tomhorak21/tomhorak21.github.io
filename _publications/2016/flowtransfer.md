@@ -2,16 +2,20 @@
 authors: [Ricardo Langner, Ulrich von Zadow, Tom Horak, Annett Mitschick, Raimund Dachselt]
 award:
 date: 2016-12-01
-doi:
+doi: 10.1007/978-3-319-45853-3_5
 keywords:
-pages:
-pdf:
+pages: 75-96
+pdf: https://imld.de/cnt/uploads/Langner-2016_FlowTransfer_CMIS2016_PRE-PUBLICATION.pdf
+poster:
+projectpage: https://imld.de/flowtransfer/
 publisher: Springer International Publishing
+slides:
 teaser: assets/flowtransfer.teaser.jpg
 thumb: assets/flowtransfer.thumb.jpg
 title: Content Sharing Between Spatially-Aware Mobile Phones and Large Vertical Displays Supporting Collaborative Work
-toappear: true
+toappear:
 type: Book Chapter
+video: https://youtu.be/AFc5sFh4bSY
 venue: Collaboration Meets Interactive Spaces
 
 abstract: >
@@ -19,7 +23,7 @@ abstract: >
 ---
 
 ## Video
-TODO: YOUTUBE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AFc5sFh4bSY" frameborder="0" allowfullscreen></iframe>
 
 ## Project page
 For more information see our project page under [imld.de/flowtransfer](https://imld.de/flowtransfer).
