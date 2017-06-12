@@ -23,5 +23,4 @@ abstract: >
 ---
 
 ## Cross-Surface Workshop
-This workshop paper was presented by Wolfgang Büschel at the 2016 Cross-Surface Workshop at ACM CHI 2016 conference.
-TODO: Link
+This workshop paper was presented by Wolfgang Büschel at the [2016 Cross-Surface Workshop](http://cross-surface.com/chi2016/) at ACM CHI 2016 conference.
