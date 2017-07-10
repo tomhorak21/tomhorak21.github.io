@@ -27,37 +27,37 @@
                 <ul class="list-unstyled contact-list">
                    
                    {% if site.email %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+                    <li class="email"><a href="mailto: {{site.email}}"><i class="fa fa-envelope"></i><span>{{site.email}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
                     
                     {% if site.phone %}
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                    <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone"></i><span>{{site.phone}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
                     
                     {% if site.website %}
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i><span>{{site.website}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
                     
                     {% if site.linkedin %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
+                    <li class="linkedin"><a href="https://in.linkedin.com/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i><span>linkedin.com/in/{{site.linkedin}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
                     
                     {% if site.github %}
-                    <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+                    <li class="github"><a href="http://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i><span>github.com/{{site.github}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
                     
                     {% if site.twitter %}
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+                    <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i><span>{{site.twitter}}</span></a></li>
                     {% else %}
                      
                     {% endif %}
