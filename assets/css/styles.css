@@ -55,7 +55,7 @@ h1 {
 h2 {
   color: #3F4650;
   font-size: 19px;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 15px;
   font-weight: 500;
 }
@@ -129,6 +129,7 @@ nav ul li {
 }
 .pub-list, .post-list {
   list-style: none;
+  padding-left: 15px;
 }
 .pub-list a {
   display: block;
