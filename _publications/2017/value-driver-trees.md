@@ -23,3 +23,6 @@ abstract: >
     Based on value drivers and an underlying model, VDTs are used to assess business's performance of companies.
     Taking into account the specific challenges of VDTs, we present an improved node representation using embedded visualizations as well as interaction concepts for local semantic zooming and simulations or predictions within these trees.
 ---
+
+## Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Ns_0ErXhb0" frameborder="0" allowfullscreen></iframe>
