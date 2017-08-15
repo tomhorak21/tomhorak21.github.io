@@ -5,9 +5,9 @@ date: 2018-01-01
 doi:
 keywords: Mobile devices, coordinated & multiple views, multi-display environment, cross-device interaction
 pages:
-pdf:
+pdf: https://imld.de/cnt/uploads/Langner_VisTiles_InfoVis17.pdf
 poster:
-projectpage:
+projectpage: https://imld.de/vistiles
 publisher: IEEE
 slides:
 teaser: assets/vistiles.teaser.jpg
