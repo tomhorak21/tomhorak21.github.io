@@ -11,7 +11,7 @@ projectpage:
 publisher:
 slides:
 teaser:
-thumb: assets/vdt.teaser.png
+thumb: assets/vdt.thumb.png
 title: "Improving Value Driver Trees to Enhance Business Data Analysis"
 toappear: true
 type: Poster
