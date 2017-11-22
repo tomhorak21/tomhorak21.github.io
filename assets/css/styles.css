@@ -409,6 +409,7 @@ nav ul li {
 
   .pub-list, .post-list {
     padding-left: 0;
+    padding-right: 0;
   }
 
   .pub-list li {
@@ -420,6 +421,11 @@ nav ul li {
   }
 }
 /* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  .pub-list .pubdata {
+    text-align: center;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .skillset .level-title {
