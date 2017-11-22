@@ -22,10 +22,10 @@ layout: compress
                     {% assign sorted = (site.publications | sort: 'date') | reverse %}
                     {% for pub in sorted %}
                         <li class="row">
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                            <div class="col-xs-12 col-sm-3 col-lg-2">
                                 <img class="thumbnail" src="./{{ pub.date | date: "%Y" }}/{{pub.thumb}}" alt="{{pub.name}} thumbnail" width=100 height=100 />
                             </div>
-                            <div class="pubdata col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                            <div class="pubdata col-xs-12 col-sm-9 col-lg-10">
                                 <a href="{{pub.url}}">{{ pub.title }}</a>
                                 {% for a in pub.authors %}
                                     {% if forloop.last %}
