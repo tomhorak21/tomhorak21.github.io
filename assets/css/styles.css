@@ -130,6 +130,7 @@ nav ul li {
 .pub-list, .post-list {
   list-style: none;
   padding-left: 15px;
+  width: 100%;
 }
 .pub-list a {
   display: block;
@@ -137,13 +138,13 @@ nav ul li {
 }
 .pub-list li {
   margin-bottom: 20px !important;
-  display: flex;
 }
 .pub-list .thumbnail {
   width: 100px;
   height: 100px;
   border-radius: 0;
-  margin-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
 }
 .pub-list .pub-data {
@@ -416,8 +417,6 @@ nav ul li {
 
   .pub-list .thumbnail {
     margin-bottom: 5px;
-    display: inline-block;
-    float: left;
   }
 }
 /* Small devices (tablets, 768px and up) */
