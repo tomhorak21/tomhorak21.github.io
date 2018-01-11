@@ -4,7 +4,7 @@ award:
 date: 2017-10-02
 doi: 10.1109/TVCG.2017.2744019
 keywords: Mobile devices, coordinated & multiple views, multi-display environment, cross-device interaction
-pages:
+pages: 626-636
 pdf: https://imld.de/cnt/uploads/Langner_VisTiles_InfoVis17.pdf
 poster:
 projectpage: https://imld.de/vistiles
@@ -19,7 +19,7 @@ video: https://youtu.be/Xj-AEmUwsvQ
 venue: IEEE Transactions on Visualization and Computer Graphics
 
 abstract: >
-    <p>We present VISTILES, a conceptual framework that uses a set of mobile devices to distribute and coordinate visualization views for the exploration of multivariate data.
+    <p>We present VisTiles, a conceptual framework that uses a set of mobile devices to distribute and coordinate visualization views for the exploration of multivariate data.
     In contrast to desktop-based interfaces for information visualization, mobile devices offer the potential to provide a dynamic and user-defined interface supporting co-located collaborative data exploration with different individual workflows.</p>
     <p>As part of our framework, we contribute concepts that enable users to interact with coordinated & multiple views (CMV) that are distributed across several mobile devices.
     The major components of the framework are:
@@ -36,4 +36,11 @@ abstract: >
 ---
 
 ## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xj-AEmUwsvQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8MxPAMKmkSM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+In a hurry? We also have a [30-second preview video](https://youtu.be/Xj-AEmUwsvQ).
+
+## Talk at IEEE VIS (InfoVis) 2017 in Phoenix, Arizona
+ The VisTiles paper has been presented at the IEEE VIS 2017 conference in the [InfoVis paper session on Techniques](http://ieeevis.org/year/2017/info/overview-amp-topics/papers-sessions).
+ Watch the full talk held by Ricardo Langner:
+ <iframe src="https://player.vimeo.com/video/237671288" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ The slides of the talk are also [available as a PDF](https://imld.de/cnt/uploads/Langner-2017_vistiles_infovis-17_small.pdf).
