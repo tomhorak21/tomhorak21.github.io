@@ -1,5 +1,5 @@
 ---
-authors: [Tom Horak, Sriram Karthik Badam, Niklas Elmqvist Raimund Dachselt]
+authors: [Tom Horak, Sriram Karthik Badam, Niklas Elmqvist, Raimund Dachselt]
 award:
 date: 2018-04-21
 doi: 10.1145/3173574.3173593
@@ -14,7 +14,7 @@ teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath.thumb.jpg
 title: "When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration
 "
-toappear:
+toappear: true
 type: Conference Paper
 video: https://youtu.be/q5P16kFs-nA
 venue: Proceedings of the ACM Conference on Human Factors in Computing Systems
