@@ -84,6 +84,31 @@ layout: compress
             <div>
                 {{content}}
             </div>
+            <div class="bibtex">
+                <h2>Bibtex</h2>
+                <div class="highlighter-rouge">
+                    <pre class=""highlight>
+                        {% if page.type %}
+                            {% if page.type == "Journal" %}
+                                {% assign type = "@article{" %}
+                            {% endif %}
+                            {% assign key = "bibkey" %}
+                            {% assign author = "" %}
+                            {% for a in page.authors %}
+                                {% if forloop.last %}
+                                    {% assign author = author + a %}
+                                {% else %}
+                                    {% assign author =+ a + " and " %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+<code>{{ type }}{{ key }},
+    {{ page.authors }}
+    author = { {{author}} },
+}</code>
+                    </pre>
+                </div>
+            </div>
             
         </div><!--//main-body-->
     </div>
