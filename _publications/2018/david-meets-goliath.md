@@ -1,6 +1,6 @@
 ---
 authors: [Tom Horak, Sriram Karthik Badam, Niklas Elmqvist, Raimund Dachselt]
-award:
+award: Honorable Mention
 date: 2018-04-21
 doi: 10.1145/3173574.3173593
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
