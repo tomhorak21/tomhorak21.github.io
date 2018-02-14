@@ -150,6 +150,14 @@ nav ul li {
 .pub-list .pub-data {
   float: left;
 }
+.award {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+}
+.award i {
+  color:  #33aac5;
+}
 .post-list .post-date {
   color: gray;
   font-size: 0.8em;
