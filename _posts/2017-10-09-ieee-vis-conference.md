@@ -5,7 +5,7 @@ title: "Attended 2017 IEEE VIS conference in Phoenix, AZ, USA"
 
 For the second time, I participated in the [IEEE VIS conference](http://ieeevis.org/)---this year, with two own contributions.
 
-With [*VisTiles*](/publications/2017/vistiles/), I had my very first InfoVis paper this year!
+With [*VisTiles*](/publications/2018/vistiles/), I had my very first InfoVis paper this year!
 My colleague Ricardo Langner did a great job in presenting our paper, while I had the pleasure to give the fast-forward presentation.
 Further, I presented a poster [on business data analysis with *Value Driver Trees*](/publications/2017/value-driver-trees/).
 I'm really happy that both our paper and poster received good feedback.

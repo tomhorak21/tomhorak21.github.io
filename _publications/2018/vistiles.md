@@ -1,7 +1,7 @@
 ---
 authors: [Ricardo Langner, Tom Horak, Raimund Dachselt]
 award:
-date: 2017-10-02
+date: 2018-01-01
 doi: 10.1109/TVCG.2017.2744019
 keywords: Mobile devices, coordinated & multiple views, multi-display environment, cross-device interaction
 pages: 626-636
