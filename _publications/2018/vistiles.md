@@ -14,7 +14,7 @@ teaser: assets/vistiles.teaser.jpg
 thumb: assets/vistiles.thumb.jpg
 title: "VisTiles: Coordinating and Combining Co-located Mobile Devices for Visual Data Exploration"
 toappear:
-type: Journal
+type: Journal Article
 video: https://youtu.be/Xj-AEmUwsvQ
 venue: IEEE Transactions on Visualization and Computer Graphics
 

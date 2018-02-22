@@ -14,7 +14,7 @@ teaser:
 thumb: assets/star-mobile-localization.thumb.png
 title: "Discussing the State of the Art for “in the wild” Mobile Device Localization"
 toappear:
-type: Workshop
+type: Workshop Paper
 video:
 venue: ISS 2016 Workshop on Interacting with Multi-Device Ecologies "'in the wild"'
 

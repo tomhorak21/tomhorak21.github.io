@@ -14,7 +14,7 @@ teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath-demo.thumb.jpg
 title: "Demonstrating David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration"
 toappear: true
-type: Demonstration Paper
+type: Demonstration
 video: https://youtu.be/q5P16kFs-nA
 venue: Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems
 

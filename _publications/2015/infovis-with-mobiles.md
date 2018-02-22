@@ -14,7 +14,7 @@ teaser:
 thumb: assets/infovis-with-mobiles.thumb.jpg
 title: "Information Visualizations with Mobile Devices: Three Promising Aspects"
 toappear:
-type: Workshop
+type: Workshop Paper
 video:
 venue: Proceedings of the Workshop on Data Exploration for Interactive Surfaces (DEXIS 2015)
 

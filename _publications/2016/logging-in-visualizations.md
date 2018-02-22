@@ -14,7 +14,7 @@ teaser:
 thumb: assets/logging-in-visualizations.thumb.jpg
 title: "Logging in Visualizations: Challenges of Interaction Techniques Beyond Mouse and Keyboard"
 toappear:
-type: Workshop
+type: Workshop Paper
 video:
 venue: Proceedings of the IEEE VIS 2016 Workshop on Logging Interactive Visualizations & Visualizing Interaction Logs (LIVVIL)
 

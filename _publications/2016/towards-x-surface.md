@@ -14,7 +14,7 @@ teaser:
 thumb: assets/towards-x-surface.thumb.jpg
 title: "Towards Cross-Surface Content Sharing Between Mobile Devices and Large Displays in the Wild"
 toappear:
-type: Workshop
+type: Workshop Paper
 video:
 venue: CHI 2016 Workshop on Interacting with Multi-Device Ecologies "'in the Wild"'
 
