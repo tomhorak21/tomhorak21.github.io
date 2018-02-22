@@ -156,7 +156,16 @@ nav ul li {
   font-size: 15px;
 }
 .award i {
-  color:  #33aac5;
+  color: #33aac5;
+  margin-right: 3px;
+}
+.type i {
+  color: #3f7d8c;
+  margin-right: 3px;
+}
+.type {
+  font-size: 15px;
+  margin-right: 10px;
 }
 .post-list .post-date {
   color: gray;
@@ -189,7 +198,7 @@ nav ul li {
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
+  background: #3f7d8c;
   text-align: center;
   color: #fff;
 }

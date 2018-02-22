@@ -55,8 +55,11 @@ layout: compress
                                     <span class="pages">{{pub.pages}}</span>,
                                 {% endif %}
                                     <span class="year">{{ pub.date | date: "%Y" }}</span>.
-                                {% if pub.award %}
+                                {% if pub.type %}
                                     <br>
+                                    <span class="type"><i class="fa fa-tag"></i> {{ pub.type }}</span>
+                                {% endif %}
+                                {% if pub.award %}
                                     <span class="award"><i class="fa fa-trophy"></i> {{pub.award}} Award</span>
                                 {% endif %}
                             </div>
