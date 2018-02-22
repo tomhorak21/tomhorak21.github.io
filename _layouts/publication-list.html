@@ -55,13 +55,17 @@ layout: compress
                                     <span class="pages">{{pub.pages}}</span>,
                                 {% endif %}
                                     <span class="year">{{ pub.date | date: "%Y" }}</span>.
-                                {% if pub.type %}
                                     <br>
-                                    <span class="type"><i class="fa fa-tag"></i> {{ pub.type }}</span>
+                                {% if pub.venue-short %}
+                                    <span class="venue-short labels"><i class="fa fa-flag"></i> {{pub.venue-short}}</span>
+                                {% endif %}
+                                {% if pub.type %}
+                                    <span class="type labels"><i class="fa fa-tag"></i> {{ pub.type }}</span>
                                 {% endif %}
                                 {% if pub.award %}
-                                    <span class="award"><i class="fa fa-trophy"></i> {{pub.award}} Award</span>
+                                    <span class="award labels"><i class="fa fa-trophy"></i> {{pub.award}} Award</span>
                                 {% endif %}
+                                <span class="more labels"><a href="{{pub.url}}"><i class="fa fa-angle-double-right"></i> Details</a></span>
                             </div>
                         </li>
                     {% endfor %}

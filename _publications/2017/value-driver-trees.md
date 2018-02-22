@@ -17,6 +17,7 @@ toappear:
 type: Poster
 video: https://youtu.be/2Ns_0ErXhb0
 venue: Poster Program of the 2017 IEEE Conference on Information Visualization (InfoVis)
+venue-short: VIS '17
 
 abstract: >
     In this work, we focus on improving data exploration for the specific multivariate graph application case of value driver trees (VDTs).

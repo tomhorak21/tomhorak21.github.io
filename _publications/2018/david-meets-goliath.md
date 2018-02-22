@@ -17,6 +17,7 @@ toappear: true
 type: Conference Paper
 video: https://youtu.be/q5P16kFs-nA
 venue: Proceedings of the ACM Conference on Human Factors in Computing Systems
+venue-short: CHI '18
 
 abstract: >
     <p>We explore the combination of smartwatches and a large interactive display to support visual data analysis.

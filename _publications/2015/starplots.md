@@ -17,6 +17,7 @@ toappear:
 type: Poster
 video: https://youtu.be/5-zZtTB0JHw
 venue: Proceedings of the 2015 ACM International Conference on Interactive Tabletops and Surfaces
+venue-short: ITS '15
 
 abstract: >
     In this paper, we present several concepts towards fluid multi-touch interactions for an interactive star plot visualization. The goal of our research is to improve the usability of visualizations by developing new and natural interaction techniques as well as designing and applying new visualization approaches. To achieve this, we systematically create consistent touch interactions for various tasks typical to information visualizations. Furthermore, we propose a new approach to integrate additional levels of information into a star plot by splitting up axes. Finally, we have successfully implemented many of our concepts in a first prototype, allowing the validation of the usefulness and usability.

@@ -17,6 +17,7 @@ toappear: true
 type: Workshop Paper
 video:
 venue: Proceedings of the CHI 2018 Workshop on Data Visualization on Mobile Devices
+venue-short: CHI '18
 
 abstract: >
     <p>In this paper, we propose a lane-based approach for displaying hierarchical graphs on mobile devices such as smartphones and tablets.

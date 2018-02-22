@@ -17,6 +17,7 @@ toappear:
 type: Journal Article
 video: https://youtu.be/Xj-AEmUwsvQ
 venue: IEEE Transactions on Visualization and Computer Graphics
+venue-short: VIS '17 / TVCG
 
 abstract: >
     <p>We present VisTiles, a conceptual framework that uses a set of mobile devices to distribute and coordinate visualization views for the exploration of multivariate data.

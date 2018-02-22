@@ -153,19 +153,18 @@ nav ul li {
 .award {
   font-weight: bold;
   font-style: italic;
-  font-size: 15px;
 }
 .award i {
-  color: #33aac5;
-  margin-right: 3px;
+  color: #33aac5 !important;
 }
-.type i {
+.labels i {
   color: #3f7d8c;
   margin-right: 3px;
 }
-.type {
-  font-size: 15px;
+.labels {
+  font-size: 14px;
   margin-right: 10px;
+  display: inline-block !important;
 }
 .post-list .post-date {
   color: gray;

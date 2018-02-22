@@ -17,6 +17,7 @@ toappear:
 type: Workshop Paper
 video:
 venue: CHI 2016 Workshop on Interacting with Multi-Device Ecologies "'in the Wild"'
+venue-short: CHI '16
 
 abstract: >
     Large vertical displays are increasingly widespread, and content sharing between them and personal mobile devices is central to many usage scenarios. Research has already led to manifold interaction techniques. In most cases however, they do not lend themselves for realistic, in-the-wild usage. In this paper we present our research towards bridging the gap to real world usage. We address the issues of awareness & connectivity as well as privacy, which we believe to be two important aspects of BYOD (bring your own device) content sharing between public displays and mobile devices.
