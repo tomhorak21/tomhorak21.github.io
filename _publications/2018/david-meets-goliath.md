@@ -1,7 +1,7 @@
 ---
 authors: [Tom Horak, Sriram Karthik Badam, Niklas Elmqvist, Raimund Dachselt]
 award: Honorable Mention
-date: 2018-04-21
+date: 2018-04-24
 doi: 10.1145/3173574.3173593
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
 pages:
@@ -12,8 +12,7 @@ publisher: ACM
 slides:
 teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath.thumb.jpg
-title: "When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration
-"
+title: "When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration"
 toappear: true
 type: Conference Paper
 video: https://youtu.be/q5P16kFs-nA
