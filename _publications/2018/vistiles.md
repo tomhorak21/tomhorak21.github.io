@@ -34,6 +34,19 @@ abstract: >
     This implementation provides a practical application case enabling users to explore a multivariate data collection.
     We also illustrate the design process including feedback from a preliminary user study, which informed the design of both the concepts and the final prototype.</p>
 
+bibtex: >
+    @Article{Langner2017,
+      author    = {Ricardo Langner and Tom Horak and Raimund Dachselt},
+      title     = {{VisTiles}: Coordinating and Combining Co-located Mobile Devices for Visual Data Exploration},
+      journal   = {{IEEE} Transactions on Visualization and Computer Graphics},
+      volume    = {24},
+      number    = {1},
+      pages     = {626--636},
+      year      = {2017},
+      doi       = {10.1109/tvcg.2017.2744019},
+      publisher = {IEEE},
+    }
+    
 ---
 
 ## Video

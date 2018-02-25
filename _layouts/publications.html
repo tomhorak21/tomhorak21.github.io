@@ -62,8 +62,10 @@ layout: compress
                 {% if page.projectpage %}
                     <a href="{{page.projectpage}}"><i class="fa fa-external-link"></i> Project page</a>
                 {% endif %}
+                {% if page.bibtex %}
+                    <a href="#bibtex"><i class="fa fa-quote-right"></i> Bibtex</a>
+                {% endif %}
                 {% if page.doi %}
-                    <a href="http://www.doi2bib.org/#/doi/{{page.doi}}"><i class="fa fa-quote-right"></i> Bibtex</a>
                     <a href="http://dx.doi.org/{{page.doi}}"><i class="fa fa-book"></i> DOI</a>
                 {% endif %}
                 {% if page.poster %}
@@ -90,6 +92,14 @@ layout: compress
             <div>
                 {{content}}
             </div>
+            {% if page.bibtex %}
+            <div class="bibtex" id="bibtex">
+                <h2>Bibtex</h2>
+                <div class="highlighter-rouge">
+<pre class="highlight"><code>{{page.bibtex}}</code></pre>
+                </div>
+            </div>
+            {% endif %}
             
         </div><!--//main-body-->
     </div>
