@@ -23,6 +23,17 @@ abstract: >
     In this work, we focus on improving data exploration for the specific multivariate graph application case of value driver trees (VDTs).
     Based on value drivers and an underlying model, VDTs are used to assess business's performance of companies.
     Taking into account the specific challenges of VDTs, we present an improved node representation using embedded visualizations as well as interaction concepts for local semantic zooming and simulations or predictions within these trees.
+    
+bibtex: >
+    @InProceedings{Horak2017,
+      author    = {Tom Horak and Ulrike Kister and Raimund Dachselt},
+      title     = {Improving Value Driver Trees to Enhance Business Data Analysis},
+      booktitle = {Poster Program of the 2017 IEEE Conference on Information Visualization (InfoVis)},
+      year      = {2017},
+      location  = {Phoenix, Arizona, USA},
+      numpages  = {2},
+    }
+
 ---
 
 ## Video

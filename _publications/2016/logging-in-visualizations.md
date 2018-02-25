@@ -21,6 +21,16 @@ venue-short: VIS '16
 
 abstract: >
     Due to the deployment of novel interaction techniques, additional challenges for logging purposes in information visualizations arise. In this position paper, we discuss specific challenges regarding four different example setups illustrated with projects of our own. In each setup, various aspects need to be considered to enable, e.g., a meaningful logging of (multiple) input streams or the replaying of logs. We do not aim to provide a technical solution for logging interaction in the various setups, but rather want to share our insights and experiences from a set of projects that apply novel interaction techniques and multi-display setups to visualizations.
+    
+bibtex: >
+    @InProceedings{Horak2016b,
+      author    = {Tom Horak and Ulrike Kister and Konstantin Klamka and Ricardo Langner and Raimund Dachselt},
+      title     = {Logging in Visualizations: Challenges of Interaction Techniques Beyond Mouse and Keyboard},
+      booktitle = {Proceedings of the IEEE VIS 2016 Workshop on Logging Interactive Visualizations \& Visualizing Interaction Logs (LIVVIL)},
+      year      = {2016},
+      location  = {Baltimore, MD, USA},
+      numpages  = {2},
+    }
 ---
 
 ## LIVVIL Workshop

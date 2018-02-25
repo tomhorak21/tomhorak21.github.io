@@ -42,7 +42,7 @@ bibtex: >
       volume    = {24},
       number    = {1},
       pages     = {626--636},
-      year      = {2017},
+      year      = {2018},
       doi       = {10.1109/tvcg.2017.2744019},
       publisher = {IEEE},
     }

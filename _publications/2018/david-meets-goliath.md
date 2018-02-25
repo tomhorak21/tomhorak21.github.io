@@ -27,6 +27,17 @@ abstract: >
     <p>We validate an implementation of our framework through a formative evaluation and a user study.
     The results show that this device combination, compared to just a large display, allows users to develop complex insights more fluidly by leveraging the roles of the two devices.
     Finally, we report on the interaction patterns and interplay between the devices for visual exploration as observed during our study.</p>
+    
+bibtex: >
+    @inproceedings{Horak2018,
+        author = {Tom Horak and Sriram Karthik Badam and Niklas Elmqvist and Raimund Dachselt},
+        title = {When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration},
+        booktitle = {Proceedings of the ACM Conference on Human Factors in Computing Systems},
+        year = {2018},
+        location = {Montreal, QC, Canada},
+        url = {https://doi.org/10.1145/3173574.3173593},
+        publisher = {ACM}
+     }
 
 ---
 

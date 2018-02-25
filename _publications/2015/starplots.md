@@ -21,6 +21,19 @@ venue-short: ITS '15
 
 abstract: >
     In this paper, we present several concepts towards fluid multi-touch interactions for an interactive star plot visualization. The goal of our research is to improve the usability of visualizations by developing new and natural interaction techniques as well as designing and applying new visualization approaches. To achieve this, we systematically create consistent touch interactions for various tasks typical to information visualizations. Furthermore, we propose a new approach to integrate additional levels of information into a star plot by splitting up axes. Finally, we have successfully implemented many of our concepts in a first prototype, allowing the validation of the usefulness and usability.
+    
+bibtex: >
+    @InProceedings{Langner2015a,
+      author    = {Ricardo Langner and Ulrike Kister and Christin Engel and Tom Horak and Raimund Dachselt},
+      title     = {Towards a Fluid Interaction Concept Bringing Star Plots to Interactive Displays},
+      booktitle = {Proceedings of the ACM Conference on Interactive Tabletops and Surfaces},
+      year      = {2015},
+      pages     = {349--354},
+      publisher = {ACM},
+      doi       = {10.1145/2817721.2823505},
+      location  = {Funchal, Madeira, Portugal},
+    }
+
 ---
 
 ## Video
