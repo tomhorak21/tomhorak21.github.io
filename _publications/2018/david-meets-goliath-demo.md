@@ -27,5 +27,14 @@ abstract: >
 
 ---
 
+## Accompanying Demonstration to our Full Paper
+This is the accompanying demonstration of our CHI 2018 full paper [*When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration*](/publications/2018/david-meets-goliath/).
+Please cite the full paper when referencing this work.
+During the ACM CHI 2018 conference, the demo will be shown on Monday evening (Apr 23).
+
 ## Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5P16kFs-nA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+In a hurry? We also have a [30-second preview video](https://youtu.be/iBiJDoESWw4).
+
+## Project Page
+Detailed information can also be found at our project page: [imld.de/david-meets-goliath](https://imld.de/david-meets-goliath).

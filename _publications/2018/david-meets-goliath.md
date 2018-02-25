@@ -30,5 +30,16 @@ abstract: >
 
 ---
 
+## Honorable Mention
+We are really happy and proud that we have received an Honorable Mention award (top 5%) for this work at CHI 2018!
+
 ## Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q5P16kFs-nA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+In a hurry? We also have a [30-second preview video](https://youtu.be/iBiJDoESWw4).
+
+## Talk & Demo at ACM CHI 2018 in Montreal, Canada
+We will present the paper at the ACM CHI 2018 conference in the *Visualization Beyond the Desktop & Visual Privacy* session at 4pm on Tuesday (Apr 24).
+Additionally, we'll show our prototype as a [demonstration](/publications/2018/david-meets-goliath-demo/) on Monday evening (Apr 23).
+
+## Project Page
+Detailed information can also be found at our project page: [imld.de/david-meets-goliath](https://imld.de/david-meets-goliath).
