@@ -23,6 +23,10 @@ abstract: >
     We present a concept for tangible visualization views using colocated,     spatially-aware mobile devices. The proposed concept takes advantage of ad-hoc device combinations and spatial arrangements, allowing users to interact with multiple coordinated visualization views distributed across mobile displays. In this work, we describe the basics of this concept and illustrate the potential of our approach by describing and implementing use cases of various visualization techniques.
 ---
 
+## Follow-up: VisTiles Full Paper at VIS 2017
+As a follow-up of this poster, we have published the full paper [*VisTiles: Coordinating and Combining Co-located Mobile Devices for Visual Data Exploration*](/publications/2018/vistiles/) at the IEEE VIS 2017.
+For more information on this project, see also the project page: [imld.de/vistiles](https://imld.de/vistiles).
+
 ## Honorable Mention
 We are really happy and proud that we have received an honorable mention for this work!
 
