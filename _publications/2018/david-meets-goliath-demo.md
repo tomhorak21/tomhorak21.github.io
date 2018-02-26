@@ -27,13 +27,13 @@ abstract: >
 
 bibtex: >
     @InProceedings{Horak2018a,
-       author = {Tom Horak and Sriram Karthik Badam and Niklas Elmqvist and Raimund Dachselt},
-       title = {Demonstrating David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration},
+       author    = {Tom Horak and Sriram Karthik Badam and Niklas Elmqvist and Raimund Dachselt},
+       title     = {Demonstrating David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration},
        booktitle = {Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems},
-       series = {CHI EA '18},
-       year = {2018},
-       location = {Montreal, QC, Canada},
-       url = {https://doi.org/10.1145/3170427.3186497},
+       series    = {CHI EA '18},
+       year      = {2018},
+       location  = {Montreal, QC, Canada},
+       doi       = {10.1145/3170427.3186497},
        publisher = {ACM},
     }
 

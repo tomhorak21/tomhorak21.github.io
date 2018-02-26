@@ -30,12 +30,12 @@ abstract: >
 
 bibtex: >
     @InProceedings{Horak2018b,
-       author = {Tom Horak and Raimund Dachselt},
-       title = {Hierarchical Graphs on Mobile Devices: A Lane-based Approach},
+       author    = {Tom Horak and Raimund Dachselt},
+       title     = {Hierarchical Graphs on Mobile Devices: A Lane-based Approach},
        booktitle = {Proceedings of the CHI 2018 Workshop on Data Visualization on Mobile Devices},
-       series = {MobileVis '18},
-       year = {2018},
-       location = {Montreal, QC, Canada},
+       series    = {MobileVis '18},
+       year      = {2018},
+       location  = {Montreal, QC, Canada},
     }
 
 ---
