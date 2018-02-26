@@ -25,6 +25,18 @@ abstract: >
     <p>With this demonstration, we present our conceptual framework and its implementation, which enables analysts to explore data items using both devices in combination.
      Building on a analysis scenario for convicted crimes in Baltimore, our demonstration gives an impression of how the device combination can allow users to develop complex insights more fluidly by leveraging the device roles.</p>
 
+bibtex: >
+    @InProceedings{Horak2018a,
+       author = {Tom Horak and Sriram Karthik Badam and Niklas Elmqvist and Raimund Dachselt},
+       title = {Demonstrating David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration},
+       booktitle = {Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems},
+       series = {CHI EA '18},
+       year = {2018},
+       location = {Montreal, QC, Canada},
+       url = {https://doi.org/10.1145/3170427.3186497},
+       publisher = {ACM},
+    }
+
 ---
 
 ## Accompanying Demonstration to our Full Paper

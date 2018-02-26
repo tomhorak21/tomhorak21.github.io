@@ -36,7 +36,7 @@ bibtex: >
         year = {2018},
         location = {Montreal, QC, Canada},
         url = {https://doi.org/10.1145/3173574.3173593},
-        publisher = {ACM}
+        publisher = {ACM},
      }
 
 ---
