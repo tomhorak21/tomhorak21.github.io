@@ -1,7 +1,8 @@
     <footer class="footer">
         <div class="text-center">
             <p>
-                © 2017 Tom Horak<br />
+                © <span id="current_year">2018</span> Tom Horak<br />
+                <script>document.getElementById("current_year").innerHTML = (new Date()).getFullYear();</script>
                 <small><a href="/impressum">Site notice / Impressum</a></small>
             </p>
                 <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
