@@ -24,9 +24,21 @@ abstract: >
        We emphasize the hierarchical levels of the graph through lanes, in order to ease the data exploration in a mobile interface.</p>
     <p>From a visualization perspective, we adapt the appearance of nodes per lane as well as reduce non-relevant levels by collapsing the corresponding lanes.
        From an interaction perspective, the lanes introduce constraints that allow us to simplify the interaction vocabulary and add guidance for the user.</p>
-     <p>We examine our concept by applying it to a business data analysis scenario using value driver trees~(VDT).
+     <p>We examine our concept by applying it to a business data analysis scenario using value driver trees (VDT).
        For this scenario, we further propose additional interface elements and functionalities that support the user during the data exploration as well as basic data simulations.
        We believe that our lane-based approach is a concept that is able to ease the visual exploration of hierarchical graphs on mobile devices.</p>
 
+bibtex: >
+    @InProceedings{Horak2018b,
+       author = {Tom Horak and Raimund Dachselt},
+       title = {Hierarchical Graphs on Mobile Devices: A Lane-based Approach},
+       booktitle = {Proceedings of the CHI 2018 Workshop on Data Visualization on Mobile Devices},
+       series = {MobileVis '18},
+       year = {2018},
+       location = {Montreal, QC, Canada},
+    }
+
 ---
 
+## MobileVis '18 Workshop
+This workshop paper is part of the [Workshop on Data Visualization on Mobile Devices](https://mobilevis.github.io/) taking place at the ACM CHI 2018 conference.
