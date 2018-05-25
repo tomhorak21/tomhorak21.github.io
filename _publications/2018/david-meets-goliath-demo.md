@@ -4,7 +4,7 @@ award:
 date: 2018-04-21
 doi: 10.1145/3170427.3186497
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
-pages:
+pages: D414:1-D414:4
 pdf:
 poster:
 projectpage: https://imld.de/david-meets-goliath
@@ -13,7 +13,7 @@ slides:
 teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath-demo.thumb.jpg
 title: "Demonstrating David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration"
-toappear: true
+toappear:
 type: Demonstration
 video: https://youtu.be/q5P16kFs-nA
 venue: Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems
@@ -32,6 +32,7 @@ bibtex: >
        booktitle = {Proceedings of the 2018 CHI Conference Extended Abstracts on Human Factors in Computing Systems},
        series    = {CHI EA '18},
        year      = {2018},
+       pages     = {D414:1--D414:4},
        location  = {Montreal, QC, Canada},
        doi       = {10.1145/3170427.3186497},
        publisher = {ACM},

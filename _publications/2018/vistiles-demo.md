@@ -13,7 +13,7 @@ slides:
 teaser:
 thumb: assets/vistiles-demo.thumbnail.jpg
 title: "Demonstrating VisTiles: Visual Data Exploration Using Mobile Devices"
-toappear: true
+toappear:
 type: Demonstration
 video: https://youtu.be/Xj-AEmUwsvQ
 venue: Proceedings of the 2018 International Conference on Advanced Visual Interfaces

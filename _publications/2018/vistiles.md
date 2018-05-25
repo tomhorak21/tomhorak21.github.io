@@ -35,7 +35,7 @@ abstract: >
     We also illustrate the design process including feedback from a preliminary user study, which informed the design of both the concepts and the final prototype.</p>
 
 bibtex: >
-    @Article{Langner2017,
+    @Article{Langner2018,
       author    = {Ricardo Langner and Tom Horak and Raimund Dachselt},
       title     = {{VisTiles}: Coordinating and Combining Co-located Mobile Devices for Visual Data Exploration},
       journal   = {{IEEE} Transactions on Visualization and Computer Graphics},

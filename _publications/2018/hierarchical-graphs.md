@@ -13,7 +13,7 @@ slides:
 teaser:
 thumb: assets/hierarchical-graphs.thumb.png
 title: "Hierarchical Graphs on Mobile Devices: A Lane-based Approach"
-toappear: true
+toappear:
 type: Workshop Paper
 video:
 venue: Proceedings of the CHI 2018 Workshop on Data Visualization on Mobile Devices

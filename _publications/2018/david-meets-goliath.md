@@ -4,7 +4,7 @@ award: Honorable Mention
 date: 2018-04-24
 doi: 10.1145/3173574.3173593
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
-pages:
+pages: 19:1-19:13
 pdf: https://imld.de/cnt/uploads/Horak_David-meets-Goliath_CHI2018.pdf
 poster:
 projectpage: https://imld.de/david-meets-goliath
@@ -13,7 +13,7 @@ slides:
 teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath.thumb.jpg
 title: "When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration"
-toappear: true
+toappear:
 type: Conference Paper
 video: https://youtu.be/q5P16kFs-nA
 venue: Proceedings of the ACM Conference on Human Factors in Computing Systems
@@ -34,6 +34,7 @@ bibtex: >
         title     = {When David Meets Goliath: Combining Smartwatches with a Large Vertical Display for Visual Data Exploration},
         booktitle = {Proceedings of the ACM Conference on Human Factors in Computing Systems},
         year      = {2018},
+        pages    = {19:1--19:13},
         location  = {Montreal, QC, Canada},
         doi       = {10.1145/3173574.3173593},
         publisher = {ACM},
