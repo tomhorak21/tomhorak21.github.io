@@ -150,6 +150,16 @@ nav ul li {
 .pub-list .pub-data {
   float: left;
 }
+
+.pub-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.pub-list.selected {
+  border-left: solid thin lightblue;
+  padding: 15px 15px 10px;
+  background: hsla(195, 10%, 97%, 1);
+}
 .award {
   font-weight: bold;
   font-style: italic;
@@ -166,7 +176,7 @@ nav ul li {
   margin-right: 10px;
   display: inline-block !important;
 }
-.post-list .post-date {
+.post-list .post-date, .inline-date {
   color: gray;
   font-size: 0.8em;
 }

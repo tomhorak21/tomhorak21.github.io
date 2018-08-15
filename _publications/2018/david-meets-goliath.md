@@ -9,6 +9,7 @@ pdf: https://imld.de/cnt/uploads/Horak_David-meets-Goliath_CHI2018.pdf
 poster:
 projectpage: https://imld.de/david-meets-goliath
 publisher: ACM
+selected: true
 slides:
 teaser: assets/david-meets-goliath.teaser.jpg
 thumb: assets/david-meets-goliath.thumb.jpg

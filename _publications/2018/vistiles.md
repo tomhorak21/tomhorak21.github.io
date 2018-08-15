@@ -9,6 +9,7 @@ pdf: https://imld.de/cnt/uploads/Langner_VisTiles_InfoVis17.pdf
 poster:
 projectpage: https://imld.de/vistiles
 publisher: IEEE
+selected: true
 slides:
 teaser: assets/vistiles.teaser.jpg
 thumb: assets/vistiles.thumb.jpg

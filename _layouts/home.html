@@ -17,6 +17,62 @@ layout: compress
             </div>
 
             <div>
+                <h2>Selected publications</h2>
+                <ul class="pub-list container selected">
+                    {% assign sorted = (site.publications | sort: 'date') | reverse %}
+                    {% for pub in sorted %}
+                    {% if pub.selected %}
+                    <li class="row">
+                        <div class="col-xs-12 col-sm-3 col-lg-2">
+                            <img class="thumbnail" src="./publications/{{ pub.date | date: "%Y" }}/{{pub.thumb}}" alt="{{pub.name}} thumbnail" width=100 height=100 />
+                        </div>
+                        <div class="pubdata col-xs-12 col-sm-9 col-lg-10">
+                            <a href="{{pub.url}}">{{ pub.title }}</a>
+                            {% for a in pub.authors %}
+                            {% if forloop.last %}
+                            {% if a == "Tom Horak" %}
+                            <strong>{{a}}</strong>.
+                            {% else if %}
+                            {{a}}.
+                            {% endif %}
+                            {% else %}
+                            {% if a == "Tom Horak" %}
+                            <strong>{{a}}</strong>,
+                            {% else if %}
+                            {{a}},
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                            {% if pub.toappear %}
+                            To appear in:
+                            {% else %}
+                            In:
+                            {% endif %}
+                            <em>{{pub.venue}}</em>.
+                            {% if pub.publisher %}
+                            {{pub.publisher}},
+                            {% endif %}
+                            {% if pub.pages %}
+                            {{pub.pages}},
+                            {% endif %}
+                            {{ pub.date | date: "%Y" }}.
+                            {% if pub.venue-short %}
+                            <br>
+                            <span class="venue-short labels"><i class="fa fa-flag"></i> {{pub.venue-short}}</span>
+                            {% endif %}
+                            {% if pub.type %}
+                            <span class="type labels"><i class="fa fa-tag"></i> {{ pub.type }}</span>
+                            {% endif %}
+                            {% if pub.award %}
+                            <span class="award labels"><i class="fa fa-trophy"></i> {{pub.award}} Award</span>
+                            {% endif %}
+                            <span class="more labels"><a href="{{pub.url}}"><i class="fa fa-angle-double-right"></i> Details</a></span>
+                        </div>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
                 <h2>Latest publications</h2>
                 <ul class="pub-list container">
                     {% assign sorted = (site.publications | sort: 'date') | reverse %}
