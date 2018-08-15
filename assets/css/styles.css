@@ -155,7 +155,7 @@ nav ul li {
   margin-bottom: 0 !important;
 }
 
-.pub-list.selected {
+.pub-list.selected, .pub-list .row.selected {
   border-left: solid thin lightblue;
   padding: 15px 15px 10px;
   background: hsla(195, 10%, 97%, 1);
