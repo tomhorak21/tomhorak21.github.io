@@ -36,7 +36,6 @@ layout: compress
                     ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}"],
                 {% endfor %}
                 ];
-                console.log(pubData);
                 </script>
 
                 <script>
@@ -78,7 +77,6 @@ layout: compress
                 const colors = ["#41a8c0", "#5e132a", "#226a4d", "#bf012a", "#3256c2", "#463834"];
 
                 function draw(data) {
-                    console.log("draw");
                     let con = d3.select('#pub-plot');
                     con.style("height", height + "px")
                         .style("width", width + "px");

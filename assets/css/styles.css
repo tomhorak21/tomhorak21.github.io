@@ -160,6 +160,9 @@ nav ul li {
   padding: 15px 15px 10px;
   background: hsla(195, 10%, 97%, 1);
 }
+.pub-list  .row.selected {
+  padding-left: 0;
+}
 .award {
   font-weight: bold;
   font-style: italic;
@@ -193,6 +196,7 @@ div#pub-data {
   flex-wrap: wrap;
   margin-bottom: 30px;
   background-color: hsla(195, 10%, 97%, 1);
+  border-left: solid thin lightblue;
 }
 
 #pub-total, #pub-highlights, #pub-plot {
