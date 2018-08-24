@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attended 2016 IEEE VIS conference in Baltimore, MD, USA
+title: Attended 2016 IEEE VIS Conference in Baltimore, MD, USA
 ---
 
 For the first time, I attended the IEEE VIS conference this year. It was a great experience!

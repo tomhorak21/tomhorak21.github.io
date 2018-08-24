@@ -36,4 +36,4 @@ bibtex: >
 ## LIVVIL Workshop
 This work was presented as part of the *Workshop on Logging Interactive Visualizations & Visualizing Interaction Logs (LIVVIL)* workshop. More information about the workshop as well as the outcome is available under [livvil.github.io/workshop](https://livvil.github.io/workshop/).
 
-All papers of the workshop were presented within a 7 minute talk. [My slides can be accessed here]({{page.slides}}).
+All papers of the workshop were presented within a 7-minute talk. [My slides can be accessed here]({{page.slides}}).

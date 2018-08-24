@@ -38,4 +38,4 @@ bibtex: >
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AFc5sFh4bSY" frameborder="0" allowfullscreen></iframe>
 
 ## Project page
-For more information see our project page under [imld.de/flowtransfer](https://imld.de/flowtransfer).
+For more information, see our project page under [imld.de/flowtransfer](https://imld.de/flowtransfer).
