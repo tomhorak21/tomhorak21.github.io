@@ -6,6 +6,8 @@ layout: compress
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 {% include head.html %}
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
 
 <body>
     <div class="wrapper">
@@ -17,7 +19,104 @@ layout: compress
             </div>
 
             <div>
-                <p> I have <em>{{site.publications.size }} publications</em> since 2014.
+                <h2>Quick Facts</h2>
+                {% assign sorted = (site.publications | sort: 'date') | reverse %}
+                <div id="pub-data">
+                    <div id="pub-total"><span class="number">{{ site.publications.size }}</span><span class="title">Publications</span><span class="circle minor"></span></div>
+                    <div id="pub-highlights">
+                        <div id="pub-full"><span class="number"></span><span class="title">Full Paper</span><span class="circle"></span></div>
+                        <div id="pub-award"><span class="number"></span><span class="title">Awards</span><span class="circle minor award"></span></div>
+                        <div id="pub-venues"><span class="number"></span><span class="title">Venues</span><span class="circle minor venue"></span></div>
+                    </div>
+                    <div id="pub-plot">
+                    </div>
+                </div>
+                <script>var pubData = [
+                    {% for pub in sorted %}
+                    ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}"],
+                {% endfor %}
+                ];
+                console.log(pubData);
+                </script>
+
+                <script>
+
+                const venues = ['CHI', 'VIS', 'ISS'];
+                const full = ['Conference Paper', 'Journal Article', 'Book Chapter'];
+
+                let dataByYear = {};
+                let fullCount = 0;
+                let awardCount = 0;
+                let allVenues = new Set();
+                for (let i = 0; i < pubData.length; i++) {
+                    let pub = pubData[i];
+                    pub[3] = pub[3].replace("ITS", "ISS");
+                    if (dataByYear[pub[1]])
+                        dataByYear[pub[1]].push(pub);
+                    else
+                        dataByYear[pub[1]] = [pub];
+
+                    if (full.indexOf(pub[2]) >= 0)
+                        fullCount++;
+                    if (pub[4] !== "")
+                        awardCount++;
+                    let ven = pub[3].split(" ")[0];
+                    ven = ven.replace("ITS", "ISS");
+                    if (ven !== "")
+                        allVenues.add(ven);
+                }
+                let maxNum = 0;
+                for (let year in dataByYear)
+                    maxNum = Math.max(maxNum, dataByYear[year].length);
+                let height = 14 * (maxNum - 1) + 34;
+                let width = 60 * Object.keys(dataByYear).length;
+
+                document.querySelector('#pub-full span.number').innerHTML = fullCount;
+                document.querySelector('#pub-award span.number').innerHTML = awardCount;
+                document.querySelector('#pub-venues span.number').innerHTML = allVenues.size + "";
+
+                const colors = ["#41a8c0", "#5e132a", "#226a4d", "#bf012a", "#3256c2", "#463834"];
+
+                function draw(data) {
+                    console.log("draw");
+                    let con = d3.select('#pub-plot');
+                    con.style("height", height + "px")
+                        .style("width", width + "px");
+
+                    let yearGroups = con.selectAll("div")
+                        .data(data)
+                        .enter().append("div")
+                        .attr("class", "year")
+                        .style("left", function(d, i) { return  i * 60 + "px"; });
+
+                    let circles = yearGroups.selectAll("span.circle")
+                        .data(function(d) {return dataByYear[d];})
+                        .enter().append("span")
+                        .attr("class", "circle pub")
+                        .attr("title", function(d) {return d[0];})
+                        .classed("minor", function(d) {return full.indexOf(d[2]) === -1;})
+                        .classed("award", function(d) {return d[4] !== "";})
+                        .style("background-color", function(d) {
+                            let i = venues.indexOf(d[3].split(' ')[0]);
+                            if (i === -1)
+                                i = venues.length;
+                            return colors[i];
+                        })
+                        .style("border-color", function(d) {
+                            let i = venues.indexOf(d[3].split(' ')[0]);
+                            if (i === -1)
+                                i = venues.length;
+                            return colors[i];
+                        });
+
+
+                    yearGroups.append("span").attr("class", "year-label").text(function(d) {return d;});
+
+                }
+
+                draw(Object.keys(dataByYear));
+                </script>
+                <h2>Full List</h2>
                 <ul class="pub-list container">
                     {% assign sorted = (site.publications | sort: 'date') | reverse %}
                     {% for pub in sorted %}

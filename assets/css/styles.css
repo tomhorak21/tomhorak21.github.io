@@ -184,6 +184,135 @@ nav ul li {
   margin-bottom: 10px;
   color: gray;
 }
+
+div#pub-data {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  background-color: hsla(195, 10%, 97%, 1);
+}
+
+#pub-total, #pub-highlights, #pub-plot {
+  padding: 5px 40px;
+  display: block;
+  margin: 20px 0;
+}
+
+#pub-total {
+  padding-left: 20px;
+}
+
+#pub-total span {
+  display: block;
+  text-align: center;
+  font-size: 150%;
+}
+
+#pub-total span.number {
+  font-size: 300%;
+}
+
+#pub-highlights {
+  border-left: solid thin lightgray;
+}
+
+@media (min-width: 1230px) {
+  #pub-highlights {
+    border-right: solid thin lightgray;
+  }
+}
+
+#pub-highlights div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+#pub-highlights div:last-child {
+  margin-bottom: 0;
+}
+
+#pub-highlights span {
+  display: inline-block;
+  font-size: 100%;
+}
+
+#pub-highlights span.number {
+  font-size: 140%;
+  margin-right: 10px;
+}
+
+#pub-highlights span.circle,
+#pub-total span.circle {
+  margin: 0 0 0 10px;
+  background-color: gray;
+  border-color: gray;
+}
+
+#pub-highlights span.circle.venue {
+  border-color: #5e132a;
+}
+
+#pub-total span.circle {
+  margin: 5px auto;
+}
+
+div#pub-plot {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 20px 20px 20px 40px;
+}
+div.year {
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+
+span.year-label {
+  border: none;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+span.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 2px black;
+  display: block;
+  margin: 2px auto;
+  cursor: pointer;
+}
+
+span.circle.minor {
+  background: white !important;
+}
+
+span.circle.minor.award:after {
+  background-color: gray;
+}
+span.circle.award:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+}
+span.circle.award {
+
+}
+
 .wrapper {
   background: #42A8C0;
   max-width: 1200px;
