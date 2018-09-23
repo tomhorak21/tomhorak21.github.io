@@ -26,14 +26,14 @@ layout: compress
                     <div id="pub-highlights">
                         <div id="pub-full"><span class="number"></span><span class="title">Full Paper</span><span class="circle"></span></div>
                         <div id="pub-award"><span class="number"></span><span class="title">Awards</span><span class="circle minor award"></span></div>
-                        <div id="pub-venues"><span class="number"></span><span class="title">Venues</span><span class="circle minor venue"></span></div>
+                        <div id="pub-first"><span class="number"></span><span class="title"><small>x</small> 1<sup>st</sup> Author</span><span class="circle minor first"></span></div>
                     </div>
                     <div id="pub-plot">
                     </div>
                 </div>
                 <script>var pubData = [
                     {% for pub in sorted %}
-                    ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}"],
+                    ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}", "{{pub.authors | join:',' }}"],
                 {% endfor %}
                 ];
                 </script>
@@ -41,12 +41,19 @@ layout: compress
                 <script>
 
                 const venues = ['CHI', 'VIS', 'ISS'];
+                const venuesDetailed = {
+                    "CHI": "CHI",
+                    "VIS": "VIS/TVCG",
+                    "ISS": "ITS/ISS"
+                };
                 const full = ['Conference Paper', 'Journal Article', 'Book Chapter'];
 
                 let dataByYear = {};
                 let fullCount = 0;
                 let awardCount = 0;
                 let allVenues = new Set();
+                let allAuthors = new Set();
+                let firstAuthorCount = 0;
                 for (let i = 0; i < pubData.length; i++) {
                     let pub = pubData[i];
                     pub[3] = pub[3].replace("ITS", "ISS");
@@ -63,18 +70,29 @@ layout: compress
                     ven = ven.replace("ITS", "ISS");
                     if (ven !== "")
                         allVenues.add(ven);
+                    let authors = pub[6].split(",");
+                    if (authors[0] === "Tom Horak") {
+                        firstAuthorCount++;
+                    }
+                    for (let a of authors) {
+                        allAuthors.add(a);
+                    }
                 }
                 let maxNum = 0;
                 for (let year in dataByYear)
                     maxNum = Math.max(maxNum, dataByYear[year].length);
-                let height = 14 * (maxNum - 1) + 34;
-                let width = 40 * Object.keys(dataByYear).length;
+                let height = 14 * (maxNum - 1) + 51;
+                let width = 40 * Object.keys(dataByYear).length - 13;
 
                 document.querySelector('#pub-full span.number').innerHTML = fullCount;
                 document.querySelector('#pub-award span.number').innerHTML = awardCount;
-                document.querySelector('#pub-venues span.number').innerHTML = allVenues.size + "";
+                document.querySelector('#pub-first span.number').innerHTML = firstAuthorCount;
+                /*document.querySelector('#pub-first span.number').innerHTML = (allAuthors.size - 1) + "";*/
+                /*document.querySelector('#pub-first span.number').innerHTML = allVenues.size + "";*/
 
-                const colors = ["#41a8c0", "#5e132a", "#226a4d", "#bf012a", "#3256c2", "#463834"];
+
+                console.log(allAuthors);
+                const colors = ["#41a8c0", "#bf012a", "#226a4d", "#463834", "#5e132a", "#3256c2"];
 
                 function draw(data) {
                     let con = d3.select('#pub-plot');
@@ -100,6 +118,9 @@ layout: compress
                                 i = venues.length;
                             return colors[i];
                         })
+                        .classed("first", function(d) {
+                            return d[6].split(",")[0] === "Tom Horak";
+                        })
                         .style("border-color", function(d) {
                             let i = venues.indexOf(d[3].split(' ')[0]);
                             if (i === -1)
@@ -110,6 +131,32 @@ layout: compress
 
                     yearGroups.append("span").attr("class", "year-label").text(function(d) {return d;});
 
+                    let legend = con.append("div").attr("class", "legend");
+                    let legendVenues = venues.slice(0);
+                    legendVenues.push("Other");
+
+                    let venueCon = legend.selectAll(".venue").data(legendVenues)
+                        .enter().append("div")
+                        .attr("class", "venue");
+
+                    venueCon.append("span")
+                        .attr("class", "circle pub")
+                        .classed("minor", true)
+                        .style("background-color", function(d) {
+                            let i = venues.indexOf(d);
+                            if (i === -1)
+                                i = venues.length;
+                            return colors[i];
+                        })
+                        .style("border-color", function(d) {
+                            let i = venues.indexOf(d);
+                            if (i === -1)
+                                i = venues.length;
+                            return colors[i];
+                        });
+                    venueCon.append("span")
+                        .attr("class", "venue-name")
+                        .text((d) => venuesDetailed[d] ? venuesDetailed[d] : d);
                 }
 
                 draw(Object.keys(dataByYear));
