@@ -33,7 +33,7 @@ layout: compress
                 </div>
                 <script>var pubData = [
                     {% for pub in sorted %}
-                    ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}", "{{pub.authors | join:',' }}"],
+                    ["{{pub.title}}", {{ pub.date | date: "%Y" }}, "{{ pub.type }}", "{{pub.venue-short}}", "{{pub.award}}", "{{pub.url}}", "{{pub.authors | join:',' }}", "{{pub.slug}}"],
                 {% endfor %}
                 ];
                 </script>
@@ -47,6 +47,8 @@ layout: compress
                     "ISS": "ITS/ISS"
                 };
                 const full = ['Conference Paper', 'Journal Article', 'Book Chapter'];
+
+                console.log(pubData);
 
                 let dataByYear = {};
                 let fullCount = 0;
@@ -90,8 +92,6 @@ layout: compress
                 /*document.querySelector('#pub-first span.number').innerHTML = (allAuthors.size - 1) + "";*/
                 /*document.querySelector('#pub-first span.number').innerHTML = allVenues.size + "";*/
 
-
-                console.log(allAuthors);
                 const colors = ["#41a8c0", "#bf012a", "#226a4d", "#463834", "#5e132a", "#3256c2"];
 
                 function draw(data) {
@@ -126,7 +126,8 @@ layout: compress
                             if (i === -1)
                                 i = venues.length;
                             return colors[i];
-                        });
+                        })
+                        .on("click", function(d) {document.location = "#" + d[7]});
 
 
                     yearGroups.append("span").attr("class", "year-label").text(function(d) {return d;});
@@ -165,7 +166,7 @@ layout: compress
                 <ul class="pub-list container">
                     {% assign sorted = (site.publications | sort: 'date') | reverse %}
                     {% for pub in sorted %}
-                        <li class="row {% if pub.selected %}selected{%endif%}">
+                        <li class="row {% if pub.selected %}selected{%endif%}" id="{{pub.slug}}">
                             <div class="col-xs-12 col-sm-3 col-lg-2">
                                 <img class="thumbnail" src="./{{ pub.date | date: "%Y" }}/{{pub.thumb}}" alt="{{pub.name}} thumbnail" width=100 height=100 />
                             </div>
