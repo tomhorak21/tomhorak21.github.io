@@ -5,8 +5,8 @@ date: 2018-09-02
 doi: 10.18420/muc2018-mci-0373
 keywords:
 pages: 261-265
-pdf:
-poster:
+pdf: https://imld.de/cnt/uploads/Abbasov-2018-Smartwatch-based_Pointing.pdf
+poster: https://imld.de/cnt/uploads/Abbasov-2018-Smartwatch-based_Pointing-Poster.pdf
 projectpage:
 publisher: Gesellschaft für Informatik e.V.
 slides:
