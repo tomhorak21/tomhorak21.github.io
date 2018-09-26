@@ -15,7 +15,7 @@ thumb: assets/graph-performance.thumb.png
 title: "Comparing Rendering Performance of Common Web Technologies for Large Graphs"
 toappear: true
 type: Poster
-video: https://youtu.be/PNTsfD4kn74
+video: https://youtu.be/dLkB_ZobDLU
 venue: Poster Program of the 2018 IEEE VIS Conference
 venue-short: VIS '18
 
