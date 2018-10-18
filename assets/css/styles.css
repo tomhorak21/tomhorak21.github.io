@@ -113,6 +113,7 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  text-align: center;
 }
 .contact-container ul li {
   padding: 0 10px;
@@ -127,6 +128,17 @@ nav ul li {
 .sidebar-wrapper .container-block {
   padding: 15px 30px !important;
 }
+
+.teaser-image {
+  display: block;
+}
+.teaser-image img {
+  width: 100%;
+  max-width: 600px;
+  display: inherit;
+  margin: 30px auto 20px auto;
+}
+
 .pub-list, .post-list {
   list-style: none;
   padding-left: 15px;
@@ -382,7 +394,7 @@ span.circle.award {
   color: #fff;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px;
+  padding: 28px;
   background: #3f7d8c;
   text-align: center;
   color: #fff;

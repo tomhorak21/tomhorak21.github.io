@@ -37,9 +37,13 @@
                     {% else %}
                     
                     {% endif %}
+
+                    {% if site.twitter %}
+                    <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i><span>{{site.twitter}}</span></a></li>
+                    {% endif %}
                     
                     {% if site.website %}
-                    <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i><span>{{site.website}}</span></a></li>
+                    <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-university"></i><span>{{site.website}}</span></a></li>
                     {% else %}
                     
                     {% endif %}
@@ -49,11 +53,9 @@
                     {% else %}
                     
                     {% endif %}
-                    
-                    {% if site.twitter %}
-                    <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i><span>{{site.twitter}}</span></a></li>
-                    {% else %}
-                     
+
+                    {% if site.scholar %}
+                    <li class="scholar"><a href="{{site.scholar}}" target="_blank"><i class="fa fa-graduation-cap"></i><span>Google Scholar</span></a></li>
                     {% endif %}
                     
                 </ul>

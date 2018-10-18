@@ -5,13 +5,16 @@ baseurl: '' #change it according to your repository name
 #Profile information
 name: Tom Horak
 tagline: Ph.D. Student
-affiliation: Interactive Media Lab Dresden
+affiliation: >
+  Interactive Media Lab
+  Technische Universität Dresden
 pic: tom-horak.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
-email: info@tom-horak.de
+email: me@tom-horak.de
 twitter: '@tomhorak21'
 website: imld.de/~horak
+scholar: https://scholar.google.de/citations?user=UpgjzPYAAAAJ&hl=en
 
 collections:
   publications:
