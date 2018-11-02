@@ -6,14 +6,14 @@ doi:
 keywords:
 pages:
 pdf: https://imld.de/cnt/uploads/Horak-2018-Graph-Performance.pdf
-poster:
+poster: https://imld.de/cnt/uploads/Horak-2018-Graph-Performance-Poster.pdf
 projectpage:
 publisher:
 slides:
 teaser:
 thumb: assets/graph-performance.thumb.png
 title: "Comparing Rendering Performance of Common Web Technologies for Large Graphs"
-toappear: true
+toappear:
 type: Poster
 video: https://youtu.be/dLkB_ZobDLU
 venue: Poster Program of the 2018 IEEE VIS Conference
@@ -37,3 +37,7 @@ bibtex: >
 
 ---
 
+## Poster
+This work was presented as a poster at the IEEE VIS 2018 conference:
+
+![poster](../assets/graph-performance.poster.png){:style="width:100%"}

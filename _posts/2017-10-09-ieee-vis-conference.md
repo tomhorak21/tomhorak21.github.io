@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Attended 2017 IEEE VIS conference in Phoenix, AZ, USA"
+title: "Attended 2017 IEEE VIS Conference in Phoenix, AZ, USA"
 ---
 
 For the second time, I participated in the [IEEE VIS conference](http://ieeevis.org/)---this year, with two own contributions.
