@@ -5,7 +5,7 @@ date: 2019-05-04
 doi: 10.1145/3290607.3299086
 keywords: Visual Data Analysis, Cross-Device Interaction, Mobile Visualization
 pages:
-pdf:
+pdf: https://imld.de/cnt/uploads/Horak-Doctoral_Consortium-CHI2019.pdf
 poster:
 projectpage:
 publisher: ACM
@@ -44,3 +44,5 @@ bibtex: >
     }
 
 ---
+## Doctoral Consortium @ CHI 2019
+This extended abstract is part of my participation in the [Doctoral Consortium](https://chi2019.acm.org/authors/doctoral-consortium/) at the ACM CHI conference in Glasgow, Scotland in May 2019.
