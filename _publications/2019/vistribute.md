@@ -35,7 +35,7 @@ abstract: >
 
 bibtex: >
     @InProceedings{Horak2019a,
-       author    = {Tom Horak},
+       author    = {Tom Horak and Andreas Mathisen and Clemens N. Klokmose and Raimund Dachselt and Niklas Elmqvist},
        title     = {Vistribute: Distributing Interactive Visualizations in Dynamic Multi-Device Setups},
        booktitle = {Proceedings of the ACM CHI Conference on Human Factors in Computing Systems},
        series    = {CHI'19},
