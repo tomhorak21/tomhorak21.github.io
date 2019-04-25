@@ -39,7 +39,11 @@
                     {% endif %}
 
                     {% if site.twitter %}
-                    <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i><span>{{site.twitter}}</span></a></li>
+                    <li class="twitter"><a href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fab fa-twitter"></i><span>{{site.twitter}}</span></a></li>
+                    {% endif %}
+
+                    {% if site.medium %}
+                    <li class="medium"><a href="https://medium.com/{{site.medium}}" target="_blank"><i class="fab fa-medium-m"></i><span>{{site.medium}}</span></a></li>
                     {% endif %}
                     
                     {% if site.website %}

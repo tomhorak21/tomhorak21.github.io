@@ -113,7 +113,7 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 .contact-container ul li {
   padding: 0 10px;
@@ -418,7 +418,8 @@ span.circle.award {
   width: 100px;
   border-radius: 50px;
 }
-.sidebar-wrapper .contact-list .fa {
+.sidebar-wrapper .contact-list .fa,
+.sidebar-wrapper .contact-list .fab {
   margin-right: 5px;
   font-size: 18px;
   vertical-align: middle;
@@ -429,7 +430,8 @@ span.circle.award {
 .sidebar-wrapper .contact-list li:last-child {
   margin-bottom: 0;
 }
-.sidebar-wrapper .contact-list .email .fa {
+.sidebar-wrapper .contact-list .email .fa,
+.sidebar-wrapper .contact-list .email .fab {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
@@ -500,7 +502,8 @@ span.circle.award {
   margin-top: 0;
   margin-bottom: 20px;
 }
-.main-wrapper .section-title .fa {
+.main-wrapper .section-title .fa,
+.main-wrapper .section-title .fab {
   width: 30px;
   height: 30px;
   margin-right: 8px;
