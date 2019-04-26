@@ -279,12 +279,6 @@ div#pub-data {
 #pub-highlights span.circle,
 #pub-total span.circle {
   margin: 0 0 0 10px;
-  background-color: gray;
-  border-color: gray;
-}
-
-#pub-highlights span.circle.venue {
-  border-color: rgb(70, 56, 52);
 }
 
 #pub-total span.circle {
@@ -300,7 +294,7 @@ div#pub-data {
 div.year {
   float: left;
   position: absolute;
-  bottom: 25px;
+  bottom: 0;
 }
 
 span.year-label {
@@ -315,10 +309,12 @@ span.circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: solid 2px black;
+  border: solid 2px #545E6C;
   display: block;
   margin: 2px auto;
   cursor: pointer;
+  background-color: #545E6C;
+
 }
 
 span.circle.minor {
@@ -341,7 +337,8 @@ span.circle.first:after {
 }
 
 span.circle.award {
-  border-radius: 0;
+  background-color: #41a8c0;
+  border-color: #41a8c0;
 }
 
 .legend {

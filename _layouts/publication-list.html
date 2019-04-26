@@ -48,8 +48,6 @@ layout: compress
                 };
                 const full = ['Conference Paper', 'Journal Article', 'Book Chapter'];
 
-                console.log(pubData);
-
                 let dataByYear = {};
                 let fullCount = 0;
                 let awardCount = 0;
@@ -83,16 +81,12 @@ layout: compress
                 let maxNum = 0;
                 for (let year in dataByYear)
                     maxNum = Math.max(maxNum, dataByYear[year].length);
-                let height = 14 * (maxNum - 1) + 51;
+                let height = 14 * (maxNum - 1) + 31;
                 let width = 40 * Object.keys(dataByYear).length - 13;
 
                 document.querySelector('#pub-full span.number').innerHTML = fullCount;
                 document.querySelector('#pub-award span.number').innerHTML = awardCount;
                 document.querySelector('#pub-first span.number').innerHTML = firstAuthorCount;
-                /*document.querySelector('#pub-first span.number').innerHTML = (allAuthors.size - 1) + "";*/
-                /*document.querySelector('#pub-first span.number').innerHTML = allVenues.size + "";*/
-
-                const colors = ["#41a8c0", "#bf012a", "#226a4d", "#463834", "#5e132a", "#3256c2"];
 
                 function draw(data) {
                     let con = d3.select('#pub-plot');
@@ -112,52 +106,13 @@ layout: compress
                         .attr("title", function(d) {return d[0];})
                         .classed("minor", function(d) {return full.indexOf(d[2]) === -1;})
                         .classed("award", function(d) {return d[4] !== "";})
-                        .style("background-color", function(d) {
-                            let i = venues.indexOf(d[3].split(' ')[0]);
-                            if (i === -1)
-                                i = venues.length;
-                            return colors[i];
-                        })
                         .classed("first", function(d) {
                             return d[6].split(",")[0] === "Tom Horak";
-                        })
-                        .style("border-color", function(d) {
-                            let i = venues.indexOf(d[3].split(' ')[0]);
-                            if (i === -1)
-                                i = venues.length;
-                            return colors[i];
                         })
                         .on("click", function(d) {document.location = "#" + d[7]});
 
 
                     yearGroups.append("span").attr("class", "year-label").text(function(d) {return d;});
-
-                    let legend = con.append("div").attr("class", "legend");
-                    let legendVenues = venues.slice(0);
-                    legendVenues.push("Other");
-
-                    let venueCon = legend.selectAll(".venue").data(legendVenues)
-                        .enter().append("div")
-                        .attr("class", "venue");
-
-                    venueCon.append("span")
-                        .attr("class", "circle pub")
-                        .classed("minor", true)
-                        .style("background-color", function(d) {
-                            let i = venues.indexOf(d);
-                            if (i === -1)
-                                i = venues.length;
-                            return colors[i];
-                        })
-                        .style("border-color", function(d) {
-                            let i = venues.indexOf(d);
-                            if (i === -1)
-                                i = venues.length;
-                            return colors[i];
-                        });
-                    venueCon.append("span")
-                        .attr("class", "venue-name")
-                        .text((d) => venuesDetailed[d] ? venuesDetailed[d] : d);
                 }
 
                 draw(Object.keys(dataByYear));
