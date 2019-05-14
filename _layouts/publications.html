@@ -57,25 +57,28 @@ layout: compress
             </div>
             <div class="links-container">
                 {% if page.pdf %}
-                    <a href="{{page.pdf}}"><i class="fa fa-file-pdf-o"></i> PDF</a>
+                    <a href="{{page.pdf}}"><i class="fas fa-file-pdf"></i> PDF</a>
                 {% endif %}
                 {% if page.projectpage %}
-                    <a href="{{page.projectpage}}"><i class="fa fa-external-link"></i> Project page</a>
+                    <a href="{{page.projectpage}}"><i class="fas fa-external-link-alt"></i> Project page</a>
                 {% endif %}
                 {% if page.bibtex %}
-                    <a href="#bibtex"><i class="fa fa-quote-right"></i> Bibtex</a>
+                    <a href="#bibtex"><i class="fas fa-quote-right"></i> Bibtex</a>
                 {% endif %}
                 {% if page.doi %}
-                    <a href="http://dx.doi.org/{{page.doi}}"><i class="fa fa-book"></i> DOI</a>
+                    <a href="http://dx.doi.org/{{page.doi}}"><i class="fas fa-book"></i> DOI</a>
                 {% endif %}
                 {% if page.poster %}
-                    <a href="{{page.poster}}"><i class="fa fa-file-image-o"></i> Poster</a>
+                    <a href="{{page.poster}}"><i class="fas fa-file-image"></i> Poster</a>
                 {% endif %}
                 {% if page.slides %}
-                    <a href="{{page.slides}}"><i class="fa fa-picture-o"></i> Slides</a>
+                    <a href="{{page.slides}}"><i class="far fa-image"></i> Slides</a>
                 {% endif %}
                 {% if page.video %}
-                    <a href="{{page.video}}"><i class="fa fa-video-camera"></i> Video</a>
+                    <a href="{{page.video}}"><i class="fas fa-video"></i> Video</a>
+                {% endif %}
+                {% if page.blog %}
+                <a href="{{page.blog}}"><i class="fas fa-align-left"></i> Blog Post</a>
                 {% endif %}
             </div>
 
