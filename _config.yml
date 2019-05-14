@@ -21,6 +21,8 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  posts:
+    permalink: /:year/:month/:day/:title
 
 defaults:
   - scope:
