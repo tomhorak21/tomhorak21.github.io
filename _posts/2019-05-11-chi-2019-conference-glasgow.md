@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Attended 2019 ACM CHI Conference in Glasgow, Scotland, UK"
+title: "Attended the 2019 ACM CHI Conference in Glasgow, Scotland, UK"
 ---
 
 I again participated in the [ACM CHI conference](http://chi2019.acm.org) by presenting *Vistribute* and attending the Doctoral Consortium.
