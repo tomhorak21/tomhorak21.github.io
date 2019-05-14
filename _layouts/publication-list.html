@@ -24,8 +24,8 @@ layout: compress
                 <div id="pub-data">
                     <div id="pub-total"><span class="number">{{ site.publications.size }}</span><span class="title">Publications</span><span class="circle minor"></span></div>
                     <div id="pub-highlights">
-                        <div id="pub-full"><span class="number"></span><span class="title">Full Paper</span><span class="circle"></span></div>
-                        <div id="pub-award"><span class="number"></span><span class="title">Awards</span><span class="circle minor award"></span></div>
+                        <div id="pub-full"><span class="number"></span><span class="title">Full Paper</span><span class="circle full"></span></div>
+                        <div id="pub-award"><span class="number"></span><span class="title">Awards</span><span class="circle award"></span></div>
                         <div id="pub-first"><span class="number"></span><span class="title"><small>x</small> 1<sup>st</sup> Author</span><span class="circle minor first"></span></div>
                     </div>
                     <div id="pub-plot">
@@ -104,7 +104,7 @@ layout: compress
                         .enter().append("span")
                         .attr("class", "circle pub")
                         .attr("title", function(d) {return d[0];})
-                        .classed("minor", function(d) {return full.indexOf(d[2]) === -1;})
+                        .classed("full", function(d) {return full.indexOf(d[2]) !== -1;})
                         .classed("award", function(d) {return d[4] !== "";})
                         .classed("first", function(d) {
                             return d[6].split(",")[0] === "Tom Horak";
