@@ -4,19 +4,19 @@ award:
 date: 2019-05-04
 doi: 10.1145/3290607.3299086
 keywords: Visual Data Analysis, Cross-Device Interaction, Mobile Visualization
-pages:
+pages: DC11:1--DC11:6
 pdf: https://imld.de/cnt/uploads/Horak-Doctoral_Consortium-CHI2019.pdf
-poster:
+poster: https://imld.de/cnt/uploads/Horak-2019-Poster-DC_Designing-Visual-Data-Exploration-in-Multi-Device-Environments.pdf
 projectpage:
 publisher: ACM
 slides:
 teaser: assets/dc-multi-device-data-exploration.teaser.png
 thumb: assets/dc-multi-device-data-exploration.thumb.jpg
 title: "Designing for Visual Data Exploration in Multi-Device Environments"
-toappear: true
+toappear:
 type: Doctoral Consortium
 video:
-venue: Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems Extended Abstracts
+venue: Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems
 venue-short: CHI '19
 
 abstract: >
@@ -35,8 +35,9 @@ bibtex: >
     @InProceedings{Horak2019,
        author    = {Tom Horak},
        title     = {Designing for Visual Data Exploration in Multi-Device Environments},
-       booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems Extended Abstracts},
-       series    = {CHI'19 EA},
+       booktitle = {Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems},
+       series    = {CHI EA '19},
+       pages     = {DC11:1--DC11:6},
        year      = {2019},
        location  = {Glasgow, Scotland, UK},
        doi       = {10.1145/3290607.3299086},
@@ -46,3 +47,7 @@ bibtex: >
 ---
 ## Doctoral Consortium @ CHI 2019
 This extended abstract is part of my participation in the [Doctoral Consortium](https://chi2019.acm.org/authors/doctoral-consortium/) at the ACM CHI conference in Glasgow, Scotland in May 2019.
+
+As part of the DC, I presented also a poster at the ACM CHI 2019 conference:
+
+![poster](../assets/dc.poster.jpg){:style="width:100%"}
