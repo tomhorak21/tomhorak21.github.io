@@ -55,11 +55,9 @@ In a hurry? We also have a [30-second preview video](https://youtu.be/JyKpG4T1EB
 ## Blog Post
 We have also published a [blog post about Vistribute on Medium](https://medium.com/@tomhorak/automatically-arranging-charts-with-vistribute-e99125b59d13?source=friends_link&sk=efbc281f3b723a56c532b03b71edbbe3), explaining the main ideas for a general audience.
 
-## Online Demo
-An online demo will be available soon. <!--Connect to the page with multiple devices and views are getting instantly distributed.-->
-
-## Source Code
-The source code of the Vistribute prototype will soon be made publicly available on Github: [github.com/tomhorak21/vistribute](https://github.com/tomhorak21/vistribute).
+## Source Code & Online Demo
+The source code of the Vistribute prototype is publicly available on Github: [github.com/tomhorak21/vistribute](https://github.com/tomhorak21/vistribute).
+An online demo can accessed on the Webstrates demo server; see the [instructions in the Github repo](https://github.com/tomhorak21/vistribute#quick-install--demo) for more details.
 
 ## Project Page
 Detailed information can also be found at our project page: [imld.de/vistribute](https://imld.de/vistribute).
