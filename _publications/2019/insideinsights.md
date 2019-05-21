@@ -5,7 +5,7 @@ date: 2019-06-03
 doi: 
 keywords: 
 pages:
-pdf: 
+pdf: https://imld.de/cnt/uploads/Mathisen-InsideInsights-EuroVis-2019.pdf
 poster:
 projectpage: 
 publisher: Wiley Online Library
@@ -16,7 +16,7 @@ thumb: assets/insideinsights.thumb.jpg
 title: "InsideInsights: Integrating Data-Driven Reporting in Collaborative Visual Analytics"
 toappear: true
 type: Journal Article
-video: 
+video: https://vimeo.com/337474793
 venue: Computer Graphics Forum
 venue-short: EuroVis '19 / CGF
 
@@ -43,3 +43,10 @@ bibtex: >
     }
 
 ---
+
+## Video
+<iframe src="https://player.vimeo.com/video/337474793" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/337474793">InsideInsights</a> from <a href="https://vimeo.com/user98773903">Andreas Mathisen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## Source Code & Online Demo
+The source code of the InsideInsights prototype will be made publicly available on Github soon: [github.com/90am/insideinsights](https://github.com/90am/insideinsights).
