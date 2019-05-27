@@ -1,6 +1,7 @@
 ---
 authors: [Andreas Mathisen, Tom Horak, Clemens N. Klokmose, Kaj Groenbaek, Niklas Elmqvist]
 award:
+blog: https://medium.com/hcil-at-umd/on-the-inside-of-insight-fbb850532fd3
 date: 2019-06-03
 doi: 
 keywords: 
@@ -47,6 +48,8 @@ bibtex: >
 ## Video
 <iframe src="https://player.vimeo.com/video/337474793" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/337474793">InsideInsights</a> from <a href="https://vimeo.com/user98773903">Andreas Mathisen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+We have also published a [blog post about InsideInsights on Medium](https://medium.com/hcil-at-umd/on-the-inside-of-insight-fbb850532fd3), explaining the main ideas for a general audience.
 
 ## Source Code & Online Demo
 The source code of the InsideInsights prototype will be made publicly available on Github soon: [github.com/90am/insideinsights](https://github.com/90am/insideinsights).
