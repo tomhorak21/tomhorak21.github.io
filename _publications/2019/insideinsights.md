@@ -3,7 +3,7 @@ authors: [Andreas Mathisen, Tom Horak, Clemens N. Klokmose, Kaj Groenbaek, Nikla
 award:
 blog: https://medium.com/hcil-at-umd/on-the-inside-of-insight-fbb850532fd3
 date: 2019-06-03
-doi: 
+doi: 10.1111/cgf.13717
 keywords: 
 pages:
 pdf: https://imld.de/cnt/uploads/Mathisen-InsideInsights-EuroVis-2019.pdf
@@ -15,7 +15,7 @@ slides:
 teaser: assets/insideinsights.teaser.jpg
 thumb: assets/insideinsights.thumb.jpg
 title: "InsideInsights: Integrating Data-Driven Reporting in Collaborative Visual Analytics"
-toappear: true
+toappear:
 type: Journal Article
 video: https://vimeo.com/337474793
 venue: Computer Graphics Forum
@@ -40,7 +40,8 @@ bibtex: >
        volume    = {38},
        number    = {3},
        year      = {2019},
-       publisher = {Wiley Online Library}
+       publisher = {Wiley Online Library},
+       doi       = {10.1111/cgf.13717},
     }
 
 ---
