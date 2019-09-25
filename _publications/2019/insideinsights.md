@@ -5,7 +5,7 @@ blog: https://medium.com/hcil-at-umd/on-the-inside-of-insight-fbb850532fd3
 date: 2019-06-03
 doi: 10.1111/cgf.13717
 keywords: 
-pages:
+pages: 649--661
 pdf: https://imld.de/cnt/uploads/Mathisen-InsideInsights-EuroVis-2019.pdf
 poster:
 projectpage: 
@@ -40,6 +40,7 @@ bibtex: >
        volume    = {38},
        number    = {3},
        year      = {2019},
+       pages     = {649--661},
        publisher = {Wiley Online Library},
        doi       = {10.1111/cgf.13717},
     }
@@ -55,4 +56,4 @@ bibtex: >
 We have also published a [blog post about InsideInsights on Medium](https://medium.com/hcil-at-umd/on-the-inside-of-insight-fbb850532fd3), explaining the main ideas for a general audience.
 
 ## Source Code & Online Demo
-The source code of the InsideInsights prototype will be made publicly available on Github soon: [github.com/90am/insideinsights](https://github.com/90am/insideinsights).
+The source code of the InsideInsights prototype is publicly available on Github: [github.com/90am/insideinsights](https://github.com/90am/insideinsights).
