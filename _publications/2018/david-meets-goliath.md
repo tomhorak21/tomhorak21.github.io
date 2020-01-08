@@ -4,6 +4,7 @@ award: Honorable Mention
 date: 2018-04-24
 doi: 10.1145/3173574.3173593
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
+note: The first two authors contributed equally.
 pages: 19:1-19:13
 pdf: https://imld.de/cnt/uploads/Horak_David-meets-Goliath_CHI2018.pdf
 poster:

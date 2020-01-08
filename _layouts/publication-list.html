@@ -155,6 +155,9 @@ layout: compress
                                     <span class="pages">{{pub.pages}}</span>,
                                 {% endif %}
                                     <span class="year">{{ pub.date | date: "%Y" }}</span>.
+                                {% if pub.note %}
+                                    <span class="labels"><em>{{pub.note}}</em></span>
+                                {% endif %}
                                     <br>
                                 {% if pub.venue-short %}
                                     <span class="venue-short labels"><i class="fa fa-flag"></i> {{pub.venue-short}}</span>

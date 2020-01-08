@@ -4,6 +4,7 @@ award:
 date: 2018-04-21
 doi: 10.1145/3170427.3186497
 keywords: Cross-device interaction, Visual Analysis, Data Exploration, Multi-Display Environment, Large Display, Smartwatch
+note: The first two authors contributed equally.
 pages: D414:1-D414:4
 pdf:
 poster:

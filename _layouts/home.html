@@ -56,6 +56,9 @@ layout: compress
                             {{pub.pages}},
                             {% endif %}
                             {{ pub.date | date: "%Y" }}.
+                            {% if pub.note %}
+                                <span class="labels"><em>{{pub.note}}</em></span>
+                            {% endif %}
                             {% if pub.venue-short %}
                             <br>
                             <span class="venue-short labels"><i class="fa fa-flag"></i> {{pub.venue-short}}</span>
@@ -114,6 +117,9 @@ layout: compress
                                     {{pub.pages}},
                                 {% endif %}
                                 {{ pub.date | date: "%Y" }}.
+                                {% if pub.note %}
+                                    <span class="labels"><em>{{pub.note}}</em></span>
+                                {% endif %}
                                 {% if pub.venue-short %}
                                     <br>
                                     <span class="venue-short labels"><i class="fa fa-flag"></i> {{pub.venue-short}}</span>

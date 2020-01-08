@@ -44,6 +44,9 @@ layout: compress
                     {{page.pages}},
                 {% endif %}
                 {{ page.date | date: "%Y" }}.
+                {% if page.note %}
+                    <span class="labels"><em>{{page.note}}</em></span>
+                {% endif %}
                 {% if page.venue-short %}
                 <br>
                     <span class="venue-short labels"><i class="fa fa-flag"></i> {{page.venue-short}}</span>
