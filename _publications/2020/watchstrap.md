@@ -6,10 +6,10 @@ date: 2020-04-25
 doi: 10.1145/3313831.3376199
 keywords: Smartwatch, Wearable Device, Interactive Watchband, Mobile Interaction, Mobile Visualization, Flexible Displays, MDE
 note: The first two authors contributed equally.
-pages: 
-pdf: 
+pages: 72:1--72:15
+pdf: https://imld.de/cnt/uploads/Klamka-WatchStrap-CHI-2020.pdf
 poster:
-projectpage: https://imld.de/watchstrap
+projectpage: https://imld.de/watch-strap
 publisher: ACM
 selected: true
 slides: 
@@ -59,4 +59,4 @@ The source code of the Watch+Strap prototype will be made publicly available on 
 An online documentation will be provided soon as well.
 
 ## Project Page
-Detailed information can also be found at our project page: [imld.de/watchstrap](https://imld.de/watchstrap).
+Detailed information can also be found at our project page: [imld.de/watch-strap](https://imld.de/watch-strap).
