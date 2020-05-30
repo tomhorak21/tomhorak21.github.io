@@ -27,6 +27,8 @@ Two months later, I got the opportunity to start as a Ph.D. student supervised b
 - Data & PCS Co-Chair at [ACM CHI 2020](https://chi2020.acm.org/organizing/).
 - PCS Chair at [ACM CHI 2019](https://chi2019.acm.org/organising/).
 - Workshop Co-Chair at the ["Mensch und Computer" 2018](http://muc2018.mensch-und-computer.de/konferenz/organisation/).
-- Reviewer for ACM CHI, ACM ISS, ACM TEI, IEEE VIS, IEEE TVCG.
-- Student Volunteer at ACM ITS/ISS 2014--2016; at IEEE VIS 2016--2019.
+- Co-organizer of the [Virtual German CHI Week](https://www.germanhci.de/events/2020-virtual-chi/) in 2020.
+- Co-organizer of the [German HCI Event at CHI](https://www.germanhci.de/editions/) in 2018, 2019, and 2020.
 - Co-organizer of the [International Spring School "smart@work"](http://smartatwork.org/organizers/) at TU Dresden in 2017.
+- Reviewer for ACM CHI, ACM ISS, ACM TEI, ACM UIST, IEEE VIS, IEEE TVCG.
+- Student Volunteer at ACM ITS/ISS 2014--2016; at IEEE VIS 2016--2019.
