@@ -16,7 +16,7 @@ slides:
 teaser: assets/watchstrap.teaser.jpg
 thumb: assets/watchstrap.thumb.jpg
 title: "Watch+Strap: Extending Smartwatches with Interactive StrapDisplays"
-toappear: true
+toappear: 
 type: Conference Paper
 video: https://youtu.be/s_bHI0SFM_o
 venue: Proceedings of the ACM CHI Conference on Human Factors in Computing Systems
@@ -51,12 +51,9 @@ bibtex: >
 <iframe width="560" height="315" src="https://www.youtube.com/embed//s_bHI0SFM_o" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 In a hurry? We also have a [30-second preview video](https://youtu.be/Op8-gh5GSxI).
 
-## Blog Post
-We will also publish a blog post about Watch+Strap on Medium later.
-
 ## Source Code & Online Documentation
-The source code of the Watch+Strap prototype will be made publicly available on Github soon.
-An online documentation will be provided soon as well.
+The source code of the Watch+Strap prototype is publicly available on Github and splitted up across three repositories: [Application Server](https://github.com/imldresden/WatchStrap-app-server), [Tizen App](https://github.com/imldresden/WatchStrap-tizen-app), and [E-Ink StrapDisplays](https://github.com/imldresden/WatchStrap-strapdisplays).
+An online documentation is provided on the project page (see below).
 
 ## Project Page
-Detailed information can also be found at our project page: [imld.de/watch-strap](https://imld.de/watch-strap).
+Detailed information can also be found at our project page: [imld.de/watch+strap](https://imld.de/watch+strap).
