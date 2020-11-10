@@ -16,7 +16,7 @@ slides:
 teaser: assets/rmc.teaser.png
 thumb: assets/rmc.thumb.jpg
 title: "Responsive Matrix Cells: A Focus+Context Approach for Exploring and Editing  Multivariate Graphs"
-toappear: 
+toappear: true
 type: Journal Article
 video: https://www.youtube.com/watch?v=fWDfjT66yMo
 venue: IEEE Transactions on Visualization and Computer Graphics

@@ -16,7 +16,7 @@ slides:
 teaser: assets/mobile-graph.teaser.png
 thumb: assets/mobile-graph.thumb.jpg
 title: "Towards Visualizing and Exploring Multivariate Networks on Mobile Devices"
-toappear: true
+toappear:
 type: Poster
 video: 
 venue: Companion Proceedings of the 2020 ACM Conference on Interactive Surfaces and Spaces
@@ -36,9 +36,10 @@ bibtex: >
         author    = {Tom Horak and Ricardo Langner and Raimund Dachselt},
         title     = {Towards Visualizing and Exploring Multivariate Networks on Mobile Devices},
         booktitle = {Companion Proceedings of the 2020 {ACM} Conference on Interactive Surfaces and Spaces},
-        pages     = {XX--XX},
+        pages     = {5--8},
         year      = {2020},
-        doi       = {10.1145/3380867.3426201}
+        doi       = {10.1145/3380867.3426201},
+        publisher = {ACM}
     }
 
 ---
