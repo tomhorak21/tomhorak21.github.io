@@ -6,7 +6,7 @@ date: 2021-02-01
 doi: 10.1109/TVCG.2020.3030371
 keywords: Multivariate Graph Visualization, Matrix Visualization, Focus+Context, Embedded Visualizations, Responsive Visualization, Graph Editing
 note: The first two authors contributed equally.
-pages: 
+pages: 1644--1654
 pdf: https://imld.de/cnt/uploads/Horak2020-Responsive_Matrix_Cells-Authors_Version.pdf
 poster:
 projectpage: https://imld.de/rmcs
@@ -16,7 +16,7 @@ slides:
 teaser: assets/rmc.teaser.png
 thumb: assets/rmc.thumb.jpg
 title: "Responsive Matrix Cells: A Focus+Context Approach for Exploring and Editing  Multivariate Graphs"
-toappear: true
+toappear:
 type: Journal Article
 video: https://www.youtube.com/watch?v=fWDfjT66yMo
 venue: IEEE Transactions on Visualization and Computer Graphics
@@ -40,9 +40,9 @@ bibtex: >
         author    = {Tom Horak and Philip Berger and Heidrun Schumann and Raimund Dachselt and Christian Tominski},
         title     = {Responsive Matrix Cells: A Focus+Context Approach for Exploring and Editing  Multivariate Graphs},
         journal   = {{IEEE} Transactions on Visualization and Computer Graphics},
-        volume    = {XX},
-        number    = {1},
-        pages     = {XX--XX},
+        volume    = {27},
+        number    = {2},
+        pages     = {1644--1654},
         year      = {2021},
         doi       = {10.1109/TVCG.2020.3030371}
     }
